@@ -1,0 +1,35 @@
+Description: Add pkg-config file for terralib.
+Author: Alastair McKinstry <mckinstry@debian.org>
+Last-Updated: 2011-09-01
+Forwarded: no
+
+diff -Nur -x '*.orig' -x '*~' libterralib/libterralib.pc libterralib.new/libterralib.pc
+--- libterralib/libterralib.pc	1970-01-01 01:00:00.000000000 +0100
++++ libterralib.new/libterralib.pc	2009-08-10 12:44:12.000000000 +0100
+@@ -0,0 +1,11 @@
++prefix=/usr
++exec_prefix=${prefix}
++libdir=/usr/lib/@DEB_HOST_MULTIARCH@
++includedir=${prefix}/include/terralib
++
++Name: libterralib
++Description: C++ library for Geographical Information Systems
++Version: 4.4.0
++Libs: -L${libdir} -lterralib
++Cflags: -I${includedir}/terralib
++Libs.private: -lz -ljpeg  -lpthread -lproj -lgeotiff -ltiff
+diff -Nur -x '*.orig' -x '*~' libterralib/libterralib.pc.in libterralib.new/libterralib.pc.in
+--- libterralib/libterralib.pc.in	1970-01-01 01:00:00.000000000 +0100
++++ libterralib.new/libterralib.pc.in	2009-08-10 12:43:14.000000000 +0100
+@@ -0,0 +1,11 @@
++prefix=@PREFIX@
++exec_prefix=${prefix}
++libdir=/usr/lib/@DEB_HOST_MULTIARCH@
++includedir=${prefix}/include/terralib
++
++Name: libterralib
++Description: C++ library for Geographical Information Systems
++Version: @VERSION@
++Libs: -L${libdir} -lterralib
++Cflags: -I${includedir}/terralib
++Libs.private: -lz -ljpeg  -lpthread -lproj -lgeotiff -ltiff

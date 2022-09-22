@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convertCoordinates", "convertCoordinates.vcproj", "{7AF97D40-AC01-471B-AE4A-81D2542DFE5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C} = {BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}
+		{99BC87CA-140D-4A99-803C-DF078430A6C8} = {99BC87CA-140D-4A99-803C-DF078430A6C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "..\..\terralibw\terralib\terralib.vcproj", "{99BC87CA-140D-4A99-803C-DF078430A6C8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "..\..\terralibw\libjpeg\libjpeg.vcproj", "{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7AF97D40-AC01-471B-AE4A-81D2542DFE5A}.Debug.ActiveCfg = Debug|Win32
+		{7AF97D40-AC01-471B-AE4A-81D2542DFE5A}.Debug.Build.0 = Debug|Win32
+		{7AF97D40-AC01-471B-AE4A-81D2542DFE5A}.Release.ActiveCfg = Release|Win32
+		{7AF97D40-AC01-471B-AE4A-81D2542DFE5A}.Release.Build.0 = Release|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Debug.ActiveCfg = Debug|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Debug.Build.0 = Debug|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Release.ActiveCfg = Release|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Release.Build.0 = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.ActiveCfg = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.Build.0 = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.ActiveCfg = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

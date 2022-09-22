@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "createSTElementSetFromLayer", "createSTElementSetFromLayer.vcproj", "{06A7D1C0-37F4-41A8-8358-798E127BFE47}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "..\..\terralibw\terralib\terralib.vcproj", "{70DF8CB8-3CDB-4040-A832-A2FDC05758C2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "..\..\terralibw\libjpeg\libjpeg.vcproj", "{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff", "..\..\terralibw\tiff\tiff.vcproj", "{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shapelib", "..\..\terralibw\shapelib\shapelib.vcproj", "{FF21EC9C-A877-4664-93FA-021381849044}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{06A7D1C0-37F4-41A8-8358-798E127BFE47}.Debug.ActiveCfg = Debug|Win32
+		{06A7D1C0-37F4-41A8-8358-798E127BFE47}.Debug.Build.0 = Debug|Win32
+		{06A7D1C0-37F4-41A8-8358-798E127BFE47}.Release.ActiveCfg = Release|Win32
+		{06A7D1C0-37F4-41A8-8358-798E127BFE47}.Release.Build.0 = Release|Win32
+		{70DF8CB8-3CDB-4040-A832-A2FDC05758C2}.Debug.ActiveCfg = Debug|Win32
+		{70DF8CB8-3CDB-4040-A832-A2FDC05758C2}.Debug.Build.0 = Debug|Win32
+		{70DF8CB8-3CDB-4040-A832-A2FDC05758C2}.Release.ActiveCfg = Release|Win32
+		{70DF8CB8-3CDB-4040-A832-A2FDC05758C2}.Release.Build.0 = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.ActiveCfg = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.Build.0 = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.ActiveCfg = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.Build.0 = Release|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Debug.ActiveCfg = Debug|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Debug.Build.0 = Debug|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Release.ActiveCfg = Release|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Release.Build.0 = Release|Win32
+		{FF21EC9C-A877-4664-93FA-021381849044}.Debug.ActiveCfg = Debug|Win32
+		{FF21EC9C-A877-4664-93FA-021381849044}.Debug.Build.0 = Debug|Win32
+		{FF21EC9C-A877-4664-93FA-021381849044}.Release.ActiveCfg = Release|Win32
+		{FF21EC9C-A877-4664-93FA-021381849044}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "..\..\terralibw\terralib\terralib.vcproj", "{99BC87CA-140D-4A99-803C-DF078430A6C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C} = {BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E} = {5E26C3A1-28D3-40FA-A3F5-115180C98E0E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "..\..\terralibw\libjpeg\libjpeg.vcproj", "{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "databaseSQLQuery", "databaseSQLQuery.vcproj", "{970FF570-5C7F-48A4-B8C7-C0539D3A45DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99BC87CA-140D-4A99-803C-DF078430A6C8} = {99BC87CA-140D-4A99-803C-DF078430A6C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff", "..\..\terralibw\tiff\tiff.vcproj", "{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Debug.ActiveCfg = Debug|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Debug.Build.0 = Debug|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Release.ActiveCfg = Release|Win32
+		{99BC87CA-140D-4A99-803C-DF078430A6C8}.Release.Build.0 = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.ActiveCfg = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.Build.0 = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.ActiveCfg = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.Build.0 = Release|Win32
+		{970FF570-5C7F-48A4-B8C7-C0539D3A45DA}.Debug.ActiveCfg = Debug|Win32
+		{970FF570-5C7F-48A4-B8C7-C0539D3A45DA}.Debug.Build.0 = Debug|Win32
+		{970FF570-5C7F-48A4-B8C7-C0539D3A45DA}.Release.ActiveCfg = Release|Win32
+		{970FF570-5C7F-48A4-B8C7-C0539D3A45DA}.Release.Build.0 = Release|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Debug.ActiveCfg = Debug|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Debug.Build.0 = Debug|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Release.ActiveCfg = Release|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

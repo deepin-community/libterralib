@@ -1,0 +1,138 @@
+Author: Alastair McKinstry <mckinstry@debian.org>
+Description: Support for Hurd and KFreeBSD to libspl
+Last-Updated: 2015-08-06
+Forwarded: no
+
+Index: libterralib-4.3.0+dfsg.2/src/libspl/include/spl_platform.h
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/src/libspl/include/spl_platform.h
++++ libterralib-4.3.0+dfsg.2/src/libspl/include/spl_platform.h
+@@ -42,6 +42,8 @@ Andreas Loeffler (www.unitedbytes.de)
+ #define		SPL_PLATFORM_LINUX			2
+ #define		SPL_PLATFORM_APPLE			3
+ #define 	SPL_PLATFORM_SOLARIS			4
++#define		SPL_PLATFORM_HURD			5
++#define		SPL_PLATFORM_KFREEBSD			6
+ 
+ //
+ // COMPILER DEFINES
+@@ -68,6 +70,14 @@ Andreas Loeffler (www.unitedbytes.de)
+ 
+ 	#define SPL_PLATFORM				SPL_PLATFORM_LINUX
+ 
++#elif defined( __GNU__ )
++
++	#define SPL_PLATFORM				SPL_PLATFORM_HURD
++
++#elif defined( __GLIBC__ )
++
++	#define	SPL_PLATFORM				SPL_PLATFORM_KFREEBSD
++	
+ #elif defined( __APPLE_CC__ ) || defined( APPLE_CC )
+ 
+ 	#define	SPL_PLATFORM				SPL_PLATFORM_APPLE
+Index: libterralib-4.3.0+dfsg.2/src/libspl/include/spl_mutex.h
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/src/libspl/include/spl_mutex.h
++++ libterralib-4.3.0+dfsg.2/src/libspl/include/spl_mutex.h
+@@ -1,4 +1,3 @@
+-
+ /*!
+ 
+ \section terms_of_use Terms of Use
+@@ -45,6 +44,11 @@ René Stuhr (www.unitedbytes.de)
+ 	#include	<pthread.h>
+ #endif
+ 
++#if	(SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
++	#include	<errno.h>
++	#include	<pthread.h>
++#endif
++
+ #if				SPL_PLATFORM == SPL_PLATFORM_WIN32
+ 	#include	<windows.h>
+ #endif
+@@ -128,7 +132,7 @@ private:
+ 	HANDLE				m_access;				///< WIN32 mutex.
+ 	SECURITY_ATTRIBUTES m_sa;
+ 
+-#elif SPL_PLATFORM == SPL_PLATFORM_LINUX
++#elif (SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM_KFREEBSD)
+ 
+ 	pthread_mutex_t		m_access;				///< POSIX mutex.
+ 
+Index: libterralib-4.3.0+dfsg.2/src/libspl/include/spl_threadlock.h
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/src/libspl/include/spl_threadlock.h
++++ libterralib-4.3.0+dfsg.2/src/libspl/include/spl_threadlock.h
+@@ -44,7 +44,7 @@ René Stuhr (www.unitedbytes.de)
+ #include	"spl_mutex.h"
+ #endif
+ 
+-#if 		SPL_PLATFORM == SPL_PLATFORM_LINUX
++#if 		(SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ #include	<errno.h>
+ #endif
+ 
+Index: libterralib-4.3.0+dfsg.2/src/libspl/source/spl_mutex.cpp
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/src/libspl/source/spl_mutex.cpp
++++ libterralib-4.3.0+dfsg.2/src/libspl/source/spl_mutex.cpp
+@@ -45,7 +45,7 @@ using namespace SPL;
+ 
+ slcMutex::slcMutex( void )
+ {
+-#if		SPL_PLATFORM == SPL_PLATFORM_LINUX	
++#if	(SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ 
+ 	pthread_mutexattr_t access_attr;
+ 	pthread_mutexattr_init( &access_attr );
+@@ -75,7 +75,7 @@ slcMutex::slcMutex( void )
+ 
+ slcMutex::~slcMutex( void )
+ {
+-#if		SPL_PLATFORM == SPL_PLATFORM_LINUX	
++#if	(SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ 
+ 	pthread_mutex_destroy( &this->m_access );
+ 
+@@ -88,7 +88,7 @@ slcMutex::~slcMutex( void )
+ 
+ void slcMutex::Lock( void )
+ {
+-#if		SPL_PLATFORM == SPL_PLATFORM_LINUX	
++#if	(SPL_PLATFORM == SPL_PLATFORM_LINUX)  || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ 
+ 	pthread_mutex_lock( &this->m_access );
+ 
+@@ -106,7 +106,7 @@ long slcMutex::TryLock( void )
+ 	//
+ 	long lResult = 0;
+ 
+-#if		SPL_PLATFORM == SPL_PLATFORM_LINUX	
++#if	(SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ 
+ 	//
+ 	// Check if object signaled and lock if success.
+@@ -131,7 +131,7 @@ long slcMutex::TryLock( void )
+ 
+ void slcMutex::Unlock( void )
+ {
+-#if		SPL_PLATFORM == SPL_PLATFORM_LINUX	
++#if (SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ 
+ 	pthread_mutex_unlock( &this->m_access );
+ 
+Index: libterralib-4.3.0+dfsg.2/src/libspl/source/spl_pluginserver_linux.cpp
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/src/libspl/source/spl_pluginserver_linux.cpp
++++ libterralib-4.3.0+dfsg.2/src/libspl/source/spl_pluginserver_linux.cpp
+@@ -39,7 +39,7 @@ Andreas Loeffler (www.unitedbytes.de)
+ #include	"spl_threadlock.h"
+ #endif
+ 
+-#if			SPL_PLATFORM == SPL_PLATFORM_LINUX
++#if	(SPL_PLATFORM == SPL_PLATFORM_LINUX) || (SPL_PLATFORM == SPL_PLATFORM_HURD) || (SPL_PLATFORM == SPL_PLATFORM_KFREEBSD)
+ 
+ #include	<dlfcn.h>
+ #include	<sys/types.h>

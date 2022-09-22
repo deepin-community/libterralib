@@ -1,0 +1,18 @@
+Description: Add support for GNU / KFreeBSD.
+Author: Cyril Brulebois <kibi@debian.org>
+Last-Updated: 2011-06-15
+Forwarded: no
+
+Index: TerraLib_linux_v_4_0_0/src/terralib/kernel/TeDefines.h
+===================================================================
+--- TerraLib_linux_v_4_0_0.orig/src/terralib/kernel/TeDefines.h	2011-06-17 11:56:34.000000000 +0100
++++ TerraLib_linux_v_4_0_0/src/terralib/kernel/TeDefines.h	2011-06-17 11:57:23.000000000 +0100
+@@ -49,7 +49,7 @@
+ 
+ #if defined( WIN32 ) || defined( __WIN32__ ) || defined ( _WIN32 ) || defined( WIN64 ) || defined( _WIN32_WCE )
+   #define TePLATFORM TePLATFORMCODE_MSWINDOWS
+-#elif defined( __LINUX__ ) || defined( linux ) || defined( __linux__ ) ||defined( __FreeBSD__ ) //FAMI
++#elif defined( __LINUX__ ) || defined( linux ) || defined( __linux__ ) ||defined( __FreeBSD__ ) || defined(__GLIBC__)  //FAMI
+   #define TePLATFORM TePLATFORMCODE_LINUX
+ #elif defined( __APPLE_CC__ ) || defined( APPLE_CC )
+   #define TePLATFORM TePLATFORMCODE_APPLE

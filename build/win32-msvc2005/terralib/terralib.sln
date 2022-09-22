@@ -1,0 +1,124 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "terralib.vcproj", "{1253197A-5710-4924-9706-6449C0C32FE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DD1ADACD-7990-4793-9952-25197394954A} = {DD1ADACD-7990-4793-9952-25197394954A}
+		{C4A3E074-08E5-4197-ABB7-06611BAC269D} = {C4A3E074-08E5-4197-ABB7-06611BAC269D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff", "..\tiff\tiff.vcproj", "{DD1ADACD-7990-4793-9952-25197394954A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C} = {BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shapelib", "..\shapelib\shapelib.vcproj", "{C4A3E074-08E5-4197-ABB7-06611BAC269D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "..\libjpeg\libjpeg.vcproj", "{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_ado", "..\te_ado\te_ado.vcproj", "{F615229C-247C-4DF2-92C4-B891BC27BD9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F8DD2AE-66D4-442A-B204-114A1EF99335} = {6F8DD2AE-66D4-442A-B204-114A1EF99335}
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_dxf", "..\te_dxf\te_dxf.vcproj", "{BE757F60-0368-4A50-AAC7-FFA4A2D5E29A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5AC793EF-07E3-44DA-AE88-E8D6546A73E4} = {5AC793EF-07E3-44DA-AE88-E8D6546A73E4}
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_firebird", "..\te_firebird\te_firebird.vcproj", "{DC4338DD-BAE5-487D-9688-573DE607CDFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_functions", "..\te_functions\te_functions.vcproj", "{877A1388-B3CA-481A-9BFB-C7178EC68D0B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_mysql", "..\te_mysql\te_mysql.vcproj", "{31C5E1F3-85BD-4580-973D-CA344342DD36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_oracle", "..\te_oracle\te_oracle.vcproj", "{EE0E1B28-F969-4F8C-8D18-B31250403089}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_postgresql", "..\te_postgresql\te_postgresql.vcproj", "{3A2BFE73-56BA-498F-BB11-A1E90D6A63B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1253197A-5710-4924-9706-6449C0C32FE9} = {1253197A-5710-4924-9706-6449C0C32FE9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dxf", "..\dxf\dxf.vcproj", "{5AC793EF-07E3-44DA-AE88-E8D6546A73E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "te_utils", "..\te_utils\te_utils.vcproj", "{6F8DD2AE-66D4-442A-B204-114A1EF99335}"
+	ProjectSection(ProjectDependencies) = postProject
+		{877A1388-B3CA-481A-9BFB-C7178EC68D0B} = {877A1388-B3CA-481A-9BFB-C7178EC68D0B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Debug|Win32.Build.0 = Debug|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Release|Win32.ActiveCfg = Release|Win32
+		{1253197A-5710-4924-9706-6449C0C32FE9}.Release|Win32.Build.0 = Release|Win32
+		{DD1ADACD-7990-4793-9952-25197394954A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD1ADACD-7990-4793-9952-25197394954A}.Debug|Win32.Build.0 = Debug|Win32
+		{DD1ADACD-7990-4793-9952-25197394954A}.Release|Win32.ActiveCfg = Release|Win32
+		{DD1ADACD-7990-4793-9952-25197394954A}.Release|Win32.Build.0 = Release|Win32
+		{C4A3E074-08E5-4197-ABB7-06611BAC269D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4A3E074-08E5-4197-ABB7-06611BAC269D}.Debug|Win32.Build.0 = Debug|Win32
+		{C4A3E074-08E5-4197-ABB7-06611BAC269D}.Release|Win32.ActiveCfg = Release|Win32
+		{C4A3E074-08E5-4197-ABB7-06611BAC269D}.Release|Win32.Build.0 = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug|Win32.Build.0 = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release|Win32.ActiveCfg = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release|Win32.Build.0 = Release|Win32
+		{F615229C-247C-4DF2-92C4-B891BC27BD9B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F615229C-247C-4DF2-92C4-B891BC27BD9B}.Debug|Win32.Build.0 = Debug|Win32
+		{F615229C-247C-4DF2-92C4-B891BC27BD9B}.Release|Win32.ActiveCfg = Release|Win32
+		{F615229C-247C-4DF2-92C4-B891BC27BD9B}.Release|Win32.Build.0 = Release|Win32
+		{BE757F60-0368-4A50-AAC7-FFA4A2D5E29A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE757F60-0368-4A50-AAC7-FFA4A2D5E29A}.Debug|Win32.Build.0 = Debug|Win32
+		{BE757F60-0368-4A50-AAC7-FFA4A2D5E29A}.Release|Win32.ActiveCfg = Release|Win32
+		{BE757F60-0368-4A50-AAC7-FFA4A2D5E29A}.Release|Win32.Build.0 = Release|Win32
+		{DC4338DD-BAE5-487D-9688-573DE607CDFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC4338DD-BAE5-487D-9688-573DE607CDFD}.Debug|Win32.Build.0 = Debug|Win32
+		{DC4338DD-BAE5-487D-9688-573DE607CDFD}.Release|Win32.ActiveCfg = Release|Win32
+		{DC4338DD-BAE5-487D-9688-573DE607CDFD}.Release|Win32.Build.0 = Release|Win32
+		{877A1388-B3CA-481A-9BFB-C7178EC68D0B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{877A1388-B3CA-481A-9BFB-C7178EC68D0B}.Debug|Win32.Build.0 = Debug|Win32
+		{877A1388-B3CA-481A-9BFB-C7178EC68D0B}.Release|Win32.ActiveCfg = Release|Win32
+		{877A1388-B3CA-481A-9BFB-C7178EC68D0B}.Release|Win32.Build.0 = Release|Win32
+		{31C5E1F3-85BD-4580-973D-CA344342DD36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31C5E1F3-85BD-4580-973D-CA344342DD36}.Debug|Win32.Build.0 = Debug|Win32
+		{31C5E1F3-85BD-4580-973D-CA344342DD36}.Release|Win32.ActiveCfg = Release|Win32
+		{31C5E1F3-85BD-4580-973D-CA344342DD36}.Release|Win32.Build.0 = Release|Win32
+		{EE0E1B28-F969-4F8C-8D18-B31250403089}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE0E1B28-F969-4F8C-8D18-B31250403089}.Debug|Win32.Build.0 = Debug|Win32
+		{EE0E1B28-F969-4F8C-8D18-B31250403089}.Release|Win32.ActiveCfg = Release|Win32
+		{EE0E1B28-F969-4F8C-8D18-B31250403089}.Release|Win32.Build.0 = Release|Win32
+		{3A2BFE73-56BA-498F-BB11-A1E90D6A63B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A2BFE73-56BA-498F-BB11-A1E90D6A63B6}.Debug|Win32.Build.0 = Debug|Win32
+		{3A2BFE73-56BA-498F-BB11-A1E90D6A63B6}.Release|Win32.ActiveCfg = Release|Win32
+		{3A2BFE73-56BA-498F-BB11-A1E90D6A63B6}.Release|Win32.Build.0 = Release|Win32
+		{5AC793EF-07E3-44DA-AE88-E8D6546A73E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5AC793EF-07E3-44DA-AE88-E8D6546A73E4}.Debug|Win32.Build.0 = Debug|Win32
+		{5AC793EF-07E3-44DA-AE88-E8D6546A73E4}.Release|Win32.ActiveCfg = Release|Win32
+		{5AC793EF-07E3-44DA-AE88-E8D6546A73E4}.Release|Win32.Build.0 = Release|Win32
+		{6F8DD2AE-66D4-442A-B204-114A1EF99335}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F8DD2AE-66D4-442A-B204-114A1EF99335}.Debug|Win32.Build.0 = Debug|Win32
+		{6F8DD2AE-66D4-442A-B204-114A1EF99335}.Release|Win32.ActiveCfg = Release|Win32
+		{6F8DD2AE-66D4-442A-B204-114A1EF99335}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

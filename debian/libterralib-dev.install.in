@@ -1,0 +1,15 @@
+Release/libterralib.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libte_functions.a  usr/lib/@DEB_HOST_MULTIARCH@
+Release/libterralibpdi.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libte_utils.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libshapelib.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libte_shapelib.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libte_mysql.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libte_postgresql.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libte_dxf.a      usr/lib/@DEB_HOST_MULTIARCH@
+Release/libstat.a      usr/lib/@DEB_HOST_MULTIARCH@
+src/terralib/dtm/*.h       usr/include/terralib/dtm
+src/terralib/functions/*.h usr/include/terralib/functions
+src/terralib/kernel/*.h    usr/include/terralib/kernel
+src/terralib/stat/*.h      usr/include/terralib/stat
+debian/libterralib.pc		usr/lib/@DEB_HOST_MULTIARCH@/pkgconfig

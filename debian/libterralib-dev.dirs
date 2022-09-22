@@ -1,0 +1,7 @@
+usr/include/terralib
+usr/include/terralib/PDI/
+usr/include/terralib/application/
+usr/include/terralib/drivers/
+usr/include/terralib/functions/
+usr/include/terralib/kernel/
+usr/include/terralib/stat/

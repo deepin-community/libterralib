@@ -1,0 +1,258 @@
+libterralib (4.3.0+dfsg.2-12.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove Debian GIS as Maintainer & Vcs-* fields,
+    package not actually maintained within the team nor in git.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 26 Aug 2019 19:28:30 +0200
+
+libterralib (4.3.0+dfsg.2-12) unstable; urgency=medium
+
+  * Standards-Version: 4.4.0
+  * Use debhelper-compat (=12)
+  * Drop obsolete Conflicts/Replaces for libterralib-dev
+  * Drop unnecessary build-dep libqwt-qt5-dev
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 26 Aug 2019 13:07:00 +0100
+
+libterralib (4.3.0+dfsg.2-11) unstable; urgency=medium
+
+  * Ack. patch and close bug: Closes: #831903
+  * Standards-Version: 4.0.0; no changes required
+  * Update FSF address in debian/copyright
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 30 Jul 2017 11:42:15 +0100
+
+libterralib (4.3.0+dfsg.2-10) unstable; urgency=medium
+
+  * switch to build depend on the metapackage default-libmysqlclient-dev
+    Closes: #845868
+  * Use debhelper 10
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 12 Dec 2016 10:59:07 +0000
+
+libterralib (4.3.0+dfsg.2-9) unstable; urgency=medium
+
+  * Patch from Set C locale when archiving object files to get a deterministic order.
+    Thanks to Eduard Sanou. Closes: #831093.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Tue, 02 Aug 2016 11:04:35 +0100
+
+libterralib (4.3.0+dfsg.2-8) unstable; urgency=medium
+
+  * Fix for ::isnan change for G++ 5.4, 6.1. Closes: #830463
+  * Drop Petter Reinholsen as uploader. Closes: #830910.	
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 14 Jul 2016 17:36:39 +0100
+
+libterralib (4.3.0+dfsg.2-7) unstable; urgency=medium
+
+  * Add patch for g++6 (-std11) changes.
+  * Build -std11 in prep. for g++-6
+  * Standards-Version: 3.9.8
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 02 May 2016 16:46:24 +0100
+
+libterralib (4.3.0+dfsg.2-6) unstable; urgency=medium
+
+  * Build with libqwt-qt5-dev, don't mix qt4. Closes: #814857.
+  * Fix Typo in debian/rules includes;  thanks to Dmitry Shachnev
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 07 Mar 2016 00:51:24 +0000
+
+libterralib (4.3.0+dfsg.2-5) unstable; urgency=medium
+
+  * Depend on dxflib >= 3.12.2 for transition.
+  * Standards-Version: 3.9.7; no changes required.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 22 Feb 2016 12:23:10 +0000
+
+libterralib (4.3.0+dfsg.2-4) unstable; urgency=medium
+
+  * Remove libspl, te_spl plugin as broken on Hurd, KFreeBSD.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 07 Aug 2015 20:05:54 +0100
+
+libterralib (4.3.0+dfsg.2-3) unstable; urgency=medium
+
+  * Add libpq-dev, libmysqlcient-dev as B-D.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 07 Aug 2015 14:31:10 +0100
+
+libterralib (4.3.0+dfsg.2-2) unstable; urgency=medium
+
+  * Add Hurd, KFreeBSD support to libspl.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 06 Aug 2015 07:18:31 +0100
+
+libterralib (4.3.0+dfsg.2-1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Move upstream VCS URL from Vcs-Svn control field to upstream metadata.
+  * Add Vcs-Browser & Vcs-Git URLs for new git repository on Alioth.
+  * Add gbp.conf to use pristine-tar by default.
+  * Restructure control file with cme.
+  * Include SOVERSION in library package name.
+    (closes: #701143, #791175)
+  * Update copyright file using copyright-format 1.0.
+
+  [ Alastair McKinstry ]
+  * New dsfg+2: Delete src/ directories DSDK as un-redistributable;
+    libjpeg, qwt, tiff, zlib, dxflib replaced by Debian packaged -dev
+    files.
+  * Build-Depend on libdxflib, libqwt-dev, libshp-dev
+  * Re-organise rules to build multi-arch stuff from generated *.in files.
+  * Add additional libs provided by terralib back
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 05 Aug 2015 10:12:57 +0100
+
+libterralib (4.3.0+dfsg.1-2) unstable; urgency=medium
+
+  * Remove libjpeg8-dev dependency; just use libjpeg-dev.
+  * Standards-Version: 3.9.6
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 29 Sep 2014 15:25:15 +0100
+
+libterralib (4.3.0+dfsg.1-1) unstable; urgency=medium
+
+  * Build dfsg release without unnecessary .so files that don't
+    have sources.
+  * Fix from Nicolas Sévelin-Radiguet for clang FTBFS. Closes: #746608.
+  * Now use xz compression.
+  * Drop unused dependencies on python-dev-all;
+  * Build using qt5.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 14 Sep 2014 09:23:31 +0100
+
+libterralib (4.3.0-1) unstable; urgency=low
+
+  * Standards-Version: 3.9.5. No changes required. 
+  * Move debhelper depends to (>= 9). 
+  * Add hardening.
+  * New upstream release.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 24 Feb 2014 18:59:50 +0000
+
+libterralib (4.0.0-4) unstable; urgency=low
+
+  * B-D on libtiff5-dev, not libtiff-dev. Closes: #665034. 
+  * Standards-Version: 3.9.3; no changes required. 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 12 Apr 2012 21:04:36 +0100
+
+libterralib (4.0.0-3) unstable; urgency=low
+
+  * Ensure libterralib is linked against libtiff. Include libtiff-dev B-D.
+  * Multi-Arch support.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 01 Sep 2011 14:22:45 +0100
+
+libterralib (4.0.0-2) unstable; urgency=low
+
+  * Need to depend on qt4-qmake, not just qt4-dev-tools. Closes: #632759 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 07 Jul 2011 09:31:47 +0100
+
+libterralib (4.0.0-1) unstable; urgency=low
+
+  * New upstream release. Closes: #622858.
+  * Change libname to match package soname libterralib1c2a -> libterralib3
+  * Standards-Version: 3.9.2. No changes required.
+  * Use dh_python2, depend on python-all-dev 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 04 Jul 2011 05:34:15 +0100
+
+libterralib (3.3.1-8) unstable; urgency=low
+
+  * Do chmod of examples in build stage, for safety. 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 25 Jan 2010 13:52:16 +0000
+
+libterralib (3.3.1-7) experimental; urgency=low
+
+  * Build in experimental with DH_VERBOSE=1 to show problems I can't
+    reproduce. 
+  * Tidy up shlib:Depends. Generate shlibs.libterralib1c2a 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sun, 24 Jan 2010 15:21:41 +0000
+
+libterralib (3.3.1-6) unstable; urgency=low
+
+  * Reverse libjpeg8-dev | libpeg8-dev  B-D so it will build before
+    other dependencies make the libjpeg8 transition.
+  * Move from CDBS to debhelper 7 + source format 3.0 build.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Fri, 22 Jan 2010 03:48:29 +0000
+
+libterralib (3.3.1-5) unstable; urgency=low
+
+  * FTBFS with libjpeg8 (namespace collision in new lib). Closes: #565322.
+  * Build-Dep on libjpeg8-dev | libjpeg-dev, not libjpeg62-dev.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Thu, 21 Jan 2010 16:31:54 +0000
+
+libterralib (3.3.1-4) unstable; urgency=low
+
+  * Build fixes for g++ 4.4. Closes: #541092.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 14 Oct 2009 21:42:50 +0100
+
+libterralib (3.3.1-3) unstable; urgency=low
+
+  * Add build-dependency on libtiff4-dev. Closes: #540661.
+  * Add pkgconfig file. Closes: #540779.
+  * Patch from Cyril Brulebois to fix FTBFS on GNU/kfreesd. Closes: #539123. 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Mon, 10 Aug 2009 12:50:03 +0100
+
+libterralib (3.3.1-2) unstable; urgency=low
+
+  * Remove pre-build binaries from source. 
+  * Remove tiff, libjpeg, zlib, qwt sources in favour of external libs.
+  * Remove unused and copyright-troublesome Oracle, DSDK , MySQL, 
+    PostgreSQL sources.
+  * Include listat.so* and libstat.
+  * Remove unneeded mtrand* sources. 
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Sat, 25 Jul 2009 11:24:49 +0100
+
+libterralib (3.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Move to Standards-Version: 3.8.2, Debhelper DH_COMPAT 7.
+
+ -- Alastair McKinstry <mckinstry@debian.org>  Wed, 17 Jun 2009 11:29:16 +0100
+
+libterralib (3.0.3b2-3.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix GCC 4.1 FTBFS, patch from Martin Michlmayr. Closes: #358243
+
+ -- Paul Wise <pabs3@bonedaddy.net>  Wed, 22 Mar 2006 15:57:53 +0800
+
+libterralib (3.0.3b2-3) unstable; urgency=low
+
+  * New maintainer.  (Closes: #342800)
+  * Fix new C++ transition (libstdc++ allocator).  (Closes: #339221)
+  * Rename libterralib1 to libterralib1c2a, and adjust
+    Conflicts/Replaces.  Patch from Daniel T Chen and ubuntu.
+
+ -- Petter Reinholdtsen <pere@debian.org>  Fri, 23 Dec 2005 12:23:05 +0100
+
+libterralib (3.0.3b2-2) unstable; urgency=low
+
+  * Added patch for amd64 compability. Thanks to Andreas Jochens
+    <aj@andraco.de>. Closes: #326693
+  * Upload sponsored by Petter Reinholdtsen.
+
+ -- Marco Tulio Gontijo e Silva <marcot@minaslivre.org>  Sun, 11 Sep 2005 00:39:24 +0000
+
+libterralib (3.0.3b2-1) unstable; urgency=low
+
+  * Initial release. Closes: #318961
+  * Upstream is not providing tarballs, so the orig file was generated for
+    debian from CVS.
+  * Sponsored by Petter Reinholdtsen.
+  
+ -- Marco Tulio Gontijo e Silva <marcot@minaslivre.org>  Mon, 18 Jul 2005 21:05:39 +0000
+

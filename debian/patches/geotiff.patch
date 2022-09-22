@@ -1,0 +1,34 @@
+Description: Link against Debian system geotiff, rather than our own version. Don't build unnecessary packages.
+Author: Alastair McKinstry <mckinstry@debian.org>
+Last-Updated: 2011-09-01
+Forwarded: no
+
+Index: TerraLib_linux_v_4_0_0/build/qt4/terralib.pro
+===================================================================
+--- TerraLib_linux_v_4_0_0.orig/build/qt4/terralib.pro	2011-06-17 11:41:55.000000000 +0100
++++ TerraLib_linux_v_4_0_0/build/qt4/terralib.pro	2011-06-17 11:42:22.000000000 +0100
+@@ -5,10 +5,7 @@
+ #-------------------------------------------
+ TEMPLATE = subdirs
+ CONFIG += ordered
+-SUBDIRS = ./libjpeg \
+-        ./shapelib \
+-        ./tiff \
+-        ./terralib \
++SUBDIRS = ./terralib \
+         ./te_functions \
+         ./te_utils
+ contains(TEDRIVERS, ALLDRIVERS) {
+Index: TerraLib_linux_v_4_0_0/build/qt4/terralib/terralib.pro
+===================================================================
+--- TerraLib_linux_v_4_0_0.orig/build/qt4/terralib/terralib.pro	2011-06-17 11:43:21.000000000 +0100
++++ TerraLib_linux_v_4_0_0/build/qt4/terralib/terralib.pro	2011-06-17 11:43:34.000000000 +0100
+@@ -15,7 +15,7 @@
+     LIBS += -lzlibdll
+ }
+ unix:LIBS += -lpthread -lz
+-LIBS += -ljpeg -lterralibtiff
++LIBS += -ljpeg -lgeotiff -ltiff
+ INCLUDEPATH	= $${TEKERNELPATH} \
+         $${TESRCPATH}/functions \
+         $${TESRCPATH}/utils \

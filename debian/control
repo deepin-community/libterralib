@@ -1,0 +1,80 @@
+Source: libterralib
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Section: libs
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libgeotiff-dev,
+               libjpeg-dev,
+               libtiff-dev,
+               qt5-qmake,
+               qtbase5-dev,
+               zlib1g-dev,
+               libshp-dev,
+   	       libdxflib-dev (>= 3.12.2),
+               default-libmysqlclient-dev,
+               libpq-dev,
+               firebird-dev
+Standards-Version: 4.4.0
+Homepage: http://www.terralib.org/
+
+Package: libterralib-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libterralib3 (= ${binary:Version}),
+         ${misc:Depends}
+Suggests: libterralib-doc
+Description: C++ library for Geographical Information Systems -- development package
+ TerraLib enables quick development of custom-built geographical applications
+ using spatial databases. As a research tool, TerraLib  is aimed at providing a
+ rich and powerful environment for the development of GIS research,
+ enabling the development of GIS prototypes that include new concepts such as
+ spatio-temporal data models, geographical ontologies and advanced spatial
+ analysis techniques. TerraLib defines a geographical data model and provides
+ support for this model over a range of different DBMS (MySQL, PostgreSQL,
+ ORACLE and ACCESS), and is implemented as a library of C++ classes and
+ functions, written in ANSI-C++.
+ .
+ This package contains development files for terralib.
+
+Package: libterralib3
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Suggests: libterralib-doc
+Conflicts: libterralib1c2a,
+Replaces: libterralib1c2a,
+          libterralib (<< 4.3.0+dfsg.1-3~)
+Breaks: libterralib (<< 4.3.0+dfsg.1-3~)
+Description: C++ library for Geographical Information Systems
+ TerraLib enables quick development of custom-built geographical applications
+ using spatial databases. As a research tool, TerraLib  is aimed at providing a
+ rich and powerful environment for the development of GIS research,
+ enabling the development of GIS prototypes that include new concepts such as
+ spatio-temporal data models, geographical ontologies and advanced spatial
+ analysis techniques. TerraLib defines a geographical data model and provides
+ support for this model over a range of different DBMS (MySQL, PostgreSQL,
+ ORACLE and ACCESS), and is implemented as a library of C++ classes and
+ functions,  written in ANSI-C++.
+
+Package: libterralib-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Recommends: libterralib3
+Replaces: libterralib3-doc
+Description: C++ library for Geographical Information Systems -- documentation package
+ TerraLib enables quick development of custom-built geographical applications
+ using spatial databases. As a research tool, TerraLib  is aimed at providing a
+ rich and powerful environment for the development of GIS research,
+ enabling the development of GIS prototypes that include new concepts such as
+ spatio-temporal data models, geographical ontologies and advanced spatial
+ analysis techniques. TerraLib defines a geographical data model and provides
+ support for this model over a range of different DBMS (MySQL, PostgreSQL,
+ ORACLE and ACCESS), and is implemented as a library of C++ classes and
+ functions, written in ANSI-C++.
+ .
+ This package contains examples for the terralib library.
+

@@ -1,0 +1,3619 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="terraViewCore"
+	ProjectGUID="{f48c5f57-666a-4aa1-997b-a6132b4ae4e0}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\..\..\Debug\terraViewCore"
+			IntermediateDirectory="..\..\..\Debug\terraViewCore"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories="&quot;..\..\..\src\terralib\kernel&quot;;&quot;..\..\..\src\terralib\drivers\ado&quot;;&quot;..\..\..\terraView&quot;;&quot;..\..\..\src\qwt\include&quot;;&quot;..\..\..\src\terralib\drivers\qwt&quot;;&quot;..\..\..\src\terralib\drivers\spl&quot;;&quot;..\..\..\src\terralib\drivers\shapelib&quot;;&quot;..\..\..\src\terralib\utils&quot;;&quot;..\..\..\src\terralib\functions&quot;;&quot;..\..\..\src\terralib\stat&quot;;&quot;..\..\..\src\shapelib&quot;;&quot;..\..\..\src\zlib&quot;;&quot;..\..\..\src\libspl&quot;;&quot;..\..\..\terraView\ui&quot;;&quot;..\..\..\src\terralib\drivers\qt&quot;;&quot;..\..\..\src\terralib\drivers\MySQL&quot;;&quot;..\..\..\src\terralib\drivers\MySQL\include&quot;;&quot;..\..\..\src\terralib\drivers\Oracle&quot;;&quot;..\..\..\src\terralib\drivers\Oracle\OCI\include&quot;;&quot;..\..\..\src\terralib\drivers\PostgreSQL&quot;;&quot;..\..\..\src\terralib\drivers\PostgreSQL\includepg&quot;;&quot;..\..\..\src\terralib\drivers\Firebird&quot;;&quot;..\..\..\src\terralib\image_processing&quot;;&quot;..\..\..\src\appUtils&quot;;&quot;$(QTDIR)\include&quot;;&quot;..\..\..\ui\terraView\&quot;;&quot;..\..\..\dependencies\win32\ado&quot;;&quot;..\..\..\dependencies\win32\ado\bin&quot;;&quot;..\..\..\ui&quot;"
+				PreprocessorDefinitions="_WINDOWS,_DEBUG,WIN32,TVIEW_AS_DLL,IBPP_WINDOWS,UNICODE,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="TRUE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="$(OutDir)\"
+				ObjectFile="$(OutDir)\"
+				ProgramDataBaseFileName="$(OutDir)\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt.lib te_spl.lib libjpeg.lib tiff.lib terralib.lib terralibpdi.lib stat.lib shapelib.lib qwt.lib te_functions.lib te_utils.lib te_qwt.lib te_shapelib.lib te_apputils.lib opengl32.lib glu32.lib lti_dsdk_dll.lib gdalogr.lib te_mysql.lib te_postgresql.lib te_oracle.lib te_firebird.lib te_ado.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\..\Debug\terraViewCore.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;..\..\../Debug/terralib&quot;;&quot;..\..\../Debug/qwt&quot;;&quot;..\..\../Debug/stat&quot;;&quot;..\..\../Debug/tiff&quot;;&quot;..\..\../Debug/shapelib&quot;;&quot;..\..\../Debug/libjpeg&quot;;&quot;..\..\../Debug/te_spl&quot;;&quot;..\..\../Debug/terralibpdi&quot;;&quot;..\..\../Debug/te_utils&quot;;&quot;..\..\../Debug/te_functions&quot;;&quot;..\..\../Debug/te_qwt&quot;;&quot;..\..\../Debug/te_shapelib&quot;;&quot;..\..\../Debug/te_apputils&quot;;&quot;..\..\..\dependencies\win32/DSDK/Debug/lib&quot;;&quot;..\..\..\dependencies\win32/DSDK/3rd-party/lib/Debug&quot;;&quot;..\..\../Debug/te_mysql&quot;;&quot;..\..\../Debug/te_postgresql&quot;;&quot;..\..\../Debug/te_oracle&quot;;&quot;..\..\../Debug/te_firebird&quot;;&quot;..\..\../Debug/te_ado&quot;;&quot;$(QTDIR)\lib&quot;"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"
+				Description="Generate imagecollection"
+				CommandLine="$(QTDIR)\bin\uic.exe -embed terraViewCore -f .imgcol -o qmake_image_collection.cpp"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\..\..\Release\terraViewCore"
+			IntermediateDirectory="..\..\..\Release\terraViewCore"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -GX -w34100 -w34189"
+				Optimization="1"
+				AdditionalIncludeDirectories="&quot;..\..\..\src\terralib\kernel&quot;;&quot;..\..\..\src\terralib\drivers\ado&quot;;&quot;..\..\..\terraView&quot;;&quot;..\..\..\src\qwt\include&quot;;&quot;..\..\..\src\terralib\drivers\qwt&quot;;&quot;..\..\..\src\terralib\drivers\spl&quot;;&quot;..\..\..\src\terralib\drivers\shapelib&quot;;&quot;..\..\..\src\terralib\utils&quot;;&quot;..\..\..\src\terralib\functions&quot;;&quot;..\..\..\src\terralib\stat&quot;;&quot;..\..\..\src\shapelib&quot;;&quot;..\..\..\src\zlib&quot;;&quot;..\..\..\src\libspl&quot;;&quot;..\..\..\terraView\ui&quot;;&quot;..\..\..\src\terralib\drivers\qt&quot;;&quot;..\..\..\src\terralib\drivers\MySQL&quot;;&quot;..\..\..\src\terralib\drivers\MySQL\include&quot;;&quot;..\..\..\src\terralib\drivers\Oracle&quot;;&quot;..\..\..\src\terralib\drivers\Oracle\OCI\include&quot;;&quot;..\..\..\src\terralib\drivers\PostgreSQL&quot;;&quot;..\..\..\src\terralib\drivers\PostgreSQL\includepg&quot;;&quot;..\..\..\src\terralib\drivers\Firebird&quot;;&quot;..\..\..\src\terralib\image_processing&quot;;&quot;..\..\..\src\appUtils&quot;;&quot;$(QTDIR)\include&quot;;&quot;..\..\..\ui\terraView&quot;;&quot;..\..\..\dependencies\win32\ado&quot;;&quot;..\..\..\dependencies\win32\ado\bin&quot;;&quot;..\..\..\ui&quot;"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,NDEBUG,WIN32,TVIEW_AS_DLL,IBPP_WINDOWS,UNICODE,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="TRUE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="FALSE"
+				RuntimeTypeInfo="TRUE"
+				AssemblerListingLocation="$(OutDir)\"
+				ObjectFile="$(OutDir)\"
+				ProgramDataBaseFileName="$(OutDir)\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"
+				DisableSpecificWarnings="4100"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt.lib libspl.lib libjpeg.lib tiff.lib terralib.lib terralibpdi.lib stat.lib shapelib.lib qwt.lib te_functions.lib te_utils.lib te_qwt.lib te_shapelib.lib te_apputils.lib opengl32.lib glu32.lib lti_dsdk_dll.lib gdalogr.lib te_mysql.lib te_postgresql.lib te_oracle.lib te_firebird.lib te_ado.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\..\Release\terraViewCore.dll"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;..\..\../Release/terralib&quot;;&quot;..\..\../Release/qwt&quot;;&quot;..\..\../Release/stat&quot;;&quot;..\..\../Release/tiff&quot;;&quot;..\..\../Release/shapelib&quot;;&quot;..\..\../Release/libjpeg&quot;;&quot;..\..\../Release/libspl&quot;;&quot;..\..\../Release/terralibpdi&quot;;&quot;..\..\../Release/te_utils&quot;;&quot;..\..\../Release/te_functions&quot;;&quot;..\..\../Release/te_qwt&quot;;&quot;..\..\../Release/te_shapelib&quot;;&quot;..\..\../Release/te_apputils&quot;;&quot;..\..\..\dependencies\win32/DSDK\Release\lib&quot;;&quot;..\..\..\dependencies\win32/DSDK/3rd-party/lib/Release&quot;;&quot;..\..\../Release/te_mysql&quot;;&quot;..\..\../Release/te_postgresql&quot;;&quot;..\..\../Release/te_oracle&quot;;&quot;..\..\../Release/te_firebird&quot;;&quot;..\..\../Release/te_ado&quot;;&quot;$(QTDIR)\lib&quot;"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
+				SubSystem="2"
+				BaseAddress="0x39D00000"
+				ImportLibrary="$(OutDir)/$(ProjectName).lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"
+				Description="Generate imagecollection"
+				CommandLine="$(QTDIR)\bin\uic.exe -embed terraViewCore -f .imgcol -o qmake_image_collection.cpp"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="..\..\..\terraView\ui\addColumn.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addressChoiceWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addressLocatorWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addressNameSeparator.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addTheme.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addView.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\anaesp.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\bayesWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeColData.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeColumnName.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeColumnType.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeMinMax.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\connectView.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\contrast.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\countComputing.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createBuffersWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createCells.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createLayerFromTheme.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createProxMatrix.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createTable.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createTextRepresentation.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createThemeFromTheme.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\database.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\display.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\displaySize.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\exportLayersThemes.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\exportWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\generateSamplePoints.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geographicalGrid.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAdd.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAggregation.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpOverlayDifference.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpOverlayIntersection.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpOverlayUnion.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphic.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphic3DWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphicConfigurationWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphicParams.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\histogramBuildForm.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\import.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importRasterSimple.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTable.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTablePoints.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTbl.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTblPoints.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\insertPoint.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\insertSymbol.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\insertText.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\kernelRatioWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\kernelWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\layerProp.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\lbsDefinition.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\legendWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\linkExtTable.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\localBayesWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\pieBarChart.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\PluginSupportFunctions.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\printFileResolution.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\projection.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\query.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterColorCompositionWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterImportWizard.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterSlicingWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterTransparency.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\removeTable.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveAsTable.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveRaster.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveTableAsTxt.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveThemeToFileWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\selectProxMatrix.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\selectTextRepresentation.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\selThemeTables.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\semivar.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\skaterWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\spatializationWindow.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\spatialQuery.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\statistic.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\tableProp.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\telayer_metadata.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\src\terralib\drivers\qt\TeQtMethods.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\src\terralib\drivers\qt\TeQtTerraStat.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\terraView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\terraViewBase.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\textRep.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\themeVis.ui.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\TViewAbstractPlugin.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\visual.ui.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="..\..\..\PluginSupportFunctions.h">
+			</File>
+			<File
+				RelativePath="..\..\..\src\terralib\drivers\qt\TeQtMethods.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\..\src\terralib\drivers\qt\TeQtMethods.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\..\src\terralib\drivers\qt\TeQtMethods.h -o ..\..\..\moc\terraView\moc_TeQtMethods.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="..\..\..\moc\terraView\moc_TeQtMethods.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\..\src\terralib\drivers\qt\TeQtMethods.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\..\src\terralib\drivers\qt\TeQtMethods.h -o ..\..\..\moc\terraView\moc_TeQtMethods.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="..\..\..\moc\terraView\moc_TeQtMethods.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\src\terralib\drivers\qt\TeQtTerraStat.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\..\src\terralib\drivers\qt\TeQtTerraStat.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\..\src\terralib\drivers\qt\TeQtTerraStat.h -o ..\..\..\moc\terraView\moc_TeQtTerraStat.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="..\..\..\moc\terraView\moc_TeQtTerraStat.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\..\src\terralib\drivers\qt\TeQtTerraStat.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\..\src\terralib\drivers\qt\TeQtTerraStat.h -o ..\..\..\moc\terraView\moc_TeQtTerraStat.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="..\..\..\moc\terraView\moc_TeQtTerraStat.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\..\terraView\terraView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\..\terraView\terraView.h -o ..\..\..\moc\terraView\moc_terraView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="..\..\..\moc\terraView\moc_terraView.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing ..\..\..\terraView\terraView.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe ..\..\..\terraView\terraView.h -o ..\..\..\moc\terraView\moc_terraView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="..\..\..\moc\terraView\moc_terraView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\TViewAbstractPlugin.h">
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\TViewDefines.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_addColumn.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_addressChoiceWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_addressLocatorWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_addressNameSeparator.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_addTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_addView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_anaesp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_bayesWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_changeColData.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_changeColumnName.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_changeColumnType.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_changeMinMax.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_connectView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_contrast.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_countComputing.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createBuffersWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createCells.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createLayerFromTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createProxMatrix.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createTextRepresentation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_createThemeFromTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_database.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_databaseProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_display.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_displaySize.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_exportLayersThemes.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_exportWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_generateSamplePoints.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geographicalGrid.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpAdd.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpAggregation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpAssignDataLocationCollect.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpAssignDataLocationDistribute.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpOverlayDifference.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpOverlayIntersection.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_geoOpOverlayUnion.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_graphic.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_graphic3DWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_graphicConfigurationWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_graphicParams.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_histogramBuildForm.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_import.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_importRasterSimple.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_importTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_importTablePoints.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_importTbl.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_importTblPoints.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_insertPoint.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_insertSymbol.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_insertText.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_kernelRatioWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_kernelWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_layerProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_lbsDefinition.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_legendWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_linkExtTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_localBayesWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_pieBarChart.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_printFileResolution.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_projection.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_query.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_rasterColorCompositionWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_rasterImportWizard.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_rasterSlicingWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_rasterTransparency.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_removeTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_saveAndLoadColorBarWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_saveAsTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_saveRaster.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_saveTableAsTxt.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_saveThemeToFileWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_selectProxMatrix.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_selectTextRepresentation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_selThemeTables.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_semivar.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_skaterWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_spatializationWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_spatialQuery.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_statistic.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_tableProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_telayer_metadata.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_TeQtMethods.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_TeQtTerraStat.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_terraView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_terraViewBase.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_textRep.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_themeProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_themeVis.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_viewProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\moc\terraView\moc_visual.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated UI Files"
+			Filter="cpp;c;cxx;h;hpp;hxx;">
+			<File
+				RelativePath="..\..\..\ui\terraView\addColumn.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addColumn.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addressChoiceWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addressChoiceWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addressLocatorWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addressLocatorWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addressNameSeparator.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addressNameSeparator.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addTheme.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\addView.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\anaesp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\anaesp.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\bayesWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\bayesWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeColData.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeColData.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeColumnName.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeColumnName.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeColumnType.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeColumnType.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeMinMax.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\changeMinMax.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\connectView.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\connectView.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\contrast.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\contrast.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\countComputing.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\countComputing.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createBuffersWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createBuffersWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createCells.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createCells.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createLayerFromTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createLayerFromTheme.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createProxMatrix.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createProxMatrix.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createTable.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createTextRepresentation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createTextRepresentation.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createThemeFromTheme.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\createThemeFromTheme.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\database.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\database.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\databaseProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\databaseProp.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\display.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\display.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\displaySize.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\displaySize.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\exportLayersThemes.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\exportLayersThemes.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\exportWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\exportWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\generateSamplePoints.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\generateSamplePoints.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geographicalGrid.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geographicalGrid.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAdd.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAdd.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAggregation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAggregation.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAssignDataLocationCollect.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpOverlayDifference.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpOverlayDifference.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpOverlayIntersection.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpOverlayIntersection.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpOverlayUnion.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\geoOpOverlayUnion.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphic.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphic.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphic3DWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphic3DWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphicConfigurationWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphicConfigurationWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphicParams.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\graphicParams.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\histogramBuildForm.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\histogramBuildForm.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\import.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\import.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importRasterSimple.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importRasterSimple.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTable.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTablePoints.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTablePoints.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTbl.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTbl.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTblPoints.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\importTblPoints.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\insertPoint.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\insertPoint.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\insertSymbol.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\insertSymbol.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\insertText.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\insertText.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\kernelRatioWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\kernelRatioWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\kernelWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\kernelWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\layerProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\layerProp.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\lbsDefinition.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\lbsDefinition.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\legendWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\legendWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\linkExtTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\linkExtTable.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\localBayesWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\localBayesWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\pieBarChart.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\pieBarChart.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\printFileResolution.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\printFileResolution.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\projection.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\projection.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\query.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\query.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterColorCompositionWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterColorCompositionWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterImportWizard.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterImportWizard.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterSlicingWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterSlicingWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterTransparency.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\rasterTransparency.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\removeTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\removeTable.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveAndLoadColorBarWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveAndLoadColorBarWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveAsTable.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveAsTable.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveRaster.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveRaster.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveTableAsTxt.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveTableAsTxt.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveThemeToFileWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\saveThemeToFileWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\selectProxMatrix.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\selectProxMatrix.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\selectTextRepresentation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\selectTextRepresentation.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\selThemeTables.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\selThemeTables.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\semivar.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\semivar.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\skaterWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\skaterWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\spatializationWindow.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\spatializationWindow.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\spatialQuery.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\spatialQuery.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\statistic.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\statistic.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\tableProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\tableProp.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\telayer_metadata.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\telayer_metadata.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\terraViewBase.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\terraViewBase.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\textRep.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\textRep.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\themeProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\themeProp.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\themeVis.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\themeVis.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\viewProp.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\viewProp.h">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\visual.cpp">
+			</File>
+			<File
+				RelativePath="..\..\..\ui\terraView\visual.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Forms"
+			Filter="ui"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="..\..\..\terraView\ui\addColumn.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addColumn.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addColumn.ui -o ..\..\..\ui\terraView\addColumn.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addColumn.ui -i addColumn.h -o ..\..\..\ui\terraView\addColumn.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addColumn.h -o ..\..\..\moc\terraView\moc_addColumn.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addColumn.h;..\..\..\ui\terraView\addColumn.cpp;..\..\..\moc\terraView\moc_addColumn.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addColumn.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addColumn.ui -o ..\..\..\ui\terraView\addColumn.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addColumn.ui -i addColumn.h -o ..\..\..\ui\terraView\addColumn.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addColumn.h -o ..\..\..\moc\terraView\moc_addColumn.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addColumn.h;..\..\..\ui\terraView\addColumn.cpp;..\..\..\moc\terraView\moc_addColumn.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addressChoiceWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addressChoiceWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressChoiceWindow.ui -o ..\..\..\ui\terraView\addressChoiceWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressChoiceWindow.ui -i addressChoiceWindow.h -o ..\..\..\ui\terraView\addressChoiceWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addressChoiceWindow.h -o ..\..\..\moc\terraView\moc_addressChoiceWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addressChoiceWindow.h;..\..\..\ui\terraView\addressChoiceWindow.cpp;..\..\..\moc\terraView\moc_addressChoiceWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addressChoiceWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressChoiceWindow.ui -o ..\..\..\ui\terraView\addressChoiceWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressChoiceWindow.ui -i addressChoiceWindow.h -o ..\..\..\ui\terraView\addressChoiceWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addressChoiceWindow.h -o ..\..\..\moc\terraView\moc_addressChoiceWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addressChoiceWindow.h;..\..\..\ui\terraView\addressChoiceWindow.cpp;..\..\..\moc\terraView\moc_addressChoiceWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addressLocatorWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addressLocatorWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressLocatorWindow.ui -o ..\..\..\ui\terraView\addressLocatorWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressLocatorWindow.ui -i addressLocatorWindow.h -o ..\..\..\ui\terraView\addressLocatorWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addressLocatorWindow.h -o ..\..\..\moc\terraView\moc_addressLocatorWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addressLocatorWindow.h;..\..\..\ui\terraView\addressLocatorWindow.cpp;..\..\..\moc\terraView\moc_addressLocatorWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addressLocatorWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressLocatorWindow.ui -o ..\..\..\ui\terraView\addressLocatorWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressLocatorWindow.ui -i addressLocatorWindow.h -o ..\..\..\ui\terraView\addressLocatorWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addressLocatorWindow.h -o ..\..\..\moc\terraView\moc_addressLocatorWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addressLocatorWindow.h;..\..\..\ui\terraView\addressLocatorWindow.cpp;..\..\..\moc\terraView\moc_addressLocatorWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addressNameSeparator.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addressNameSeparator.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressNameSeparator.ui -o ..\..\..\ui\terraView\addressNameSeparator.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressNameSeparator.ui -i addressNameSeparator.h -o ..\..\..\ui\terraView\addressNameSeparator.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addressNameSeparator.h -o ..\..\..\moc\terraView\moc_addressNameSeparator.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addressNameSeparator.h;..\..\..\ui\terraView\addressNameSeparator.cpp;..\..\..\moc\terraView\moc_addressNameSeparator.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addressNameSeparator.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressNameSeparator.ui -o ..\..\..\ui\terraView\addressNameSeparator.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addressNameSeparator.ui -i addressNameSeparator.h -o ..\..\..\ui\terraView\addressNameSeparator.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addressNameSeparator.h -o ..\..\..\moc\terraView\moc_addressNameSeparator.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addressNameSeparator.h;..\..\..\ui\terraView\addressNameSeparator.cpp;..\..\..\moc\terraView\moc_addressNameSeparator.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addTheme.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addTheme.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addTheme.ui -o ..\..\..\ui\terraView\addTheme.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addTheme.ui -i addTheme.h -o ..\..\..\ui\terraView\addTheme.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addTheme.h -o ..\..\..\moc\terraView\moc_addTheme.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addTheme.h;..\..\..\ui\terraView\addTheme.cpp;..\..\..\moc\terraView\moc_addTheme.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addTheme.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addTheme.ui -o ..\..\..\ui\terraView\addTheme.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addTheme.ui -i addTheme.h -o ..\..\..\ui\terraView\addTheme.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addTheme.h -o ..\..\..\moc\terraView\moc_addTheme.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addTheme.h;..\..\..\ui\terraView\addTheme.cpp;..\..\..\moc\terraView\moc_addTheme.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\addView.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addView.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addView.ui -o ..\..\..\ui\terraView\addView.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addView.ui -i addView.h -o ..\..\..\ui\terraView\addView.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addView.h -o ..\..\..\moc\terraView\moc_addView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addView.h;..\..\..\ui\terraView\addView.cpp;..\..\..\moc\terraView\moc_addView.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\addView.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addView.ui -o ..\..\..\ui\terraView\addView.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\addView.ui -i addView.h -o ..\..\..\ui\terraView\addView.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\addView.h -o ..\..\..\moc\terraView\moc_addView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\addView.h;..\..\..\ui\terraView\addView.cpp;..\..\..\moc\terraView\moc_addView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\anaesp.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\anaesp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\anaesp.ui -o ..\..\..\ui\terraView\anaesp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\anaesp.ui -i anaesp.h -o ..\..\..\ui\terraView\anaesp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\anaesp.h -o ..\..\..\moc\terraView\moc_anaesp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\anaesp.h;..\..\..\ui\terraView\anaesp.cpp;..\..\..\moc\terraView\moc_anaesp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\anaesp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\anaesp.ui -o ..\..\..\ui\terraView\anaesp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\anaesp.ui -i anaesp.h -o ..\..\..\ui\terraView\anaesp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\anaesp.h -o ..\..\..\moc\terraView\moc_anaesp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\anaesp.h;..\..\..\ui\terraView\anaesp.cpp;..\..\..\moc\terraView\moc_anaesp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\bayesWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\bayesWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\bayesWindow.ui -o ..\..\..\ui\terraView\bayesWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\bayesWindow.ui -i bayesWindow.h -o ..\..\..\ui\terraView\bayesWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\bayesWindow.h -o ..\..\..\moc\terraView\moc_bayesWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\bayesWindow.h;..\..\..\ui\terraView\bayesWindow.cpp;..\..\..\moc\terraView\moc_bayesWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\bayesWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\bayesWindow.ui -o ..\..\..\ui\terraView\bayesWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\bayesWindow.ui -i bayesWindow.h -o ..\..\..\ui\terraView\bayesWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\bayesWindow.h -o ..\..\..\moc\terraView\moc_bayesWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\bayesWindow.h;..\..\..\ui\terraView\bayesWindow.cpp;..\..\..\moc\terraView\moc_bayesWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeColData.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeColData.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColData.ui -o ..\..\..\ui\terraView\changeColData.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColData.ui -i changeColData.h -o ..\..\..\ui\terraView\changeColData.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeColData.h -o ..\..\..\moc\terraView\moc_changeColData.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeColData.h;..\..\..\ui\terraView\changeColData.cpp;..\..\..\moc\terraView\moc_changeColData.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeColData.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColData.ui -o ..\..\..\ui\terraView\changeColData.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColData.ui -i changeColData.h -o ..\..\..\ui\terraView\changeColData.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeColData.h -o ..\..\..\moc\terraView\moc_changeColData.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeColData.h;..\..\..\ui\terraView\changeColData.cpp;..\..\..\moc\terraView\moc_changeColData.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeColumnName.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeColumnName.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnName.ui -o ..\..\..\ui\terraView\changeColumnName.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnName.ui -i changeColumnName.h -o ..\..\..\ui\terraView\changeColumnName.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeColumnName.h -o ..\..\..\moc\terraView\moc_changeColumnName.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeColumnName.h;..\..\..\ui\terraView\changeColumnName.cpp;..\..\..\moc\terraView\moc_changeColumnName.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeColumnName.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnName.ui -o ..\..\..\ui\terraView\changeColumnName.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnName.ui -i changeColumnName.h -o ..\..\..\ui\terraView\changeColumnName.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeColumnName.h -o ..\..\..\moc\terraView\moc_changeColumnName.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeColumnName.h;..\..\..\ui\terraView\changeColumnName.cpp;..\..\..\moc\terraView\moc_changeColumnName.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeColumnType.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeColumnType.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnType.ui -o ..\..\..\ui\terraView\changeColumnType.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnType.ui -i changeColumnType.h -o ..\..\..\ui\terraView\changeColumnType.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeColumnType.h -o ..\..\..\moc\terraView\moc_changeColumnType.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeColumnType.h;..\..\..\ui\terraView\changeColumnType.cpp;..\..\..\moc\terraView\moc_changeColumnType.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeColumnType.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnType.ui -o ..\..\..\ui\terraView\changeColumnType.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeColumnType.ui -i changeColumnType.h -o ..\..\..\ui\terraView\changeColumnType.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeColumnType.h -o ..\..\..\moc\terraView\moc_changeColumnType.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeColumnType.h;..\..\..\ui\terraView\changeColumnType.cpp;..\..\..\moc\terraView\moc_changeColumnType.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\changeMinMax.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeMinMax.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeMinMax.ui -o ..\..\..\ui\terraView\changeMinMax.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeMinMax.ui -i changeMinMax.h -o ..\..\..\ui\terraView\changeMinMax.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeMinMax.h -o ..\..\..\moc\terraView\moc_changeMinMax.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeMinMax.h;..\..\..\ui\terraView\changeMinMax.cpp;..\..\..\moc\terraView\moc_changeMinMax.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\changeMinMax.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeMinMax.ui -o ..\..\..\ui\terraView\changeMinMax.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\changeMinMax.ui -i changeMinMax.h -o ..\..\..\ui\terraView\changeMinMax.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\changeMinMax.h -o ..\..\..\moc\terraView\moc_changeMinMax.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\changeMinMax.h;..\..\..\ui\terraView\changeMinMax.cpp;..\..\..\moc\terraView\moc_changeMinMax.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\connectView.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\connectView.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\connectView.ui -o ..\..\..\ui\terraView\connectView.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\connectView.ui -i connectView.h -o ..\..\..\ui\terraView\connectView.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\connectView.h -o ..\..\..\moc\terraView\moc_connectView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\connectView.h;..\..\..\ui\terraView\connectView.cpp;..\..\..\moc\terraView\moc_connectView.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\connectView.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\connectView.ui -o ..\..\..\ui\terraView\connectView.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\connectView.ui -i connectView.h -o ..\..\..\ui\terraView\connectView.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\connectView.h -o ..\..\..\moc\terraView\moc_connectView.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\connectView.h;..\..\..\ui\terraView\connectView.cpp;..\..\..\moc\terraView\moc_connectView.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\contrast.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\contrast.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\contrast.ui -o ..\..\..\ui\terraView\contrast.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\contrast.ui -i contrast.h -o ..\..\..\ui\terraView\contrast.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\contrast.h -o ..\..\..\moc\terraView\moc_contrast.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\contrast.h;..\..\..\ui\terraView\contrast.cpp;..\..\..\moc\terraView\moc_contrast.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\contrast.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\contrast.ui -o ..\..\..\ui\terraView\contrast.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\contrast.ui -i contrast.h -o ..\..\..\ui\terraView\contrast.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\contrast.h -o ..\..\..\moc\terraView\moc_contrast.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\contrast.h;..\..\..\ui\terraView\contrast.cpp;..\..\..\moc\terraView\moc_contrast.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\countComputing.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\countComputing.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\countComputing.ui -o ..\..\..\ui\terraView\countComputing.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\countComputing.ui -i countComputing.h -o ..\..\..\ui\terraView\countComputing.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\countComputing.h -o ..\..\..\moc\terraView\moc_countComputing.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\countComputing.h;..\..\..\ui\terraView\countComputing.cpp;..\..\..\moc\terraView\moc_countComputing.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\countComputing.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\countComputing.ui -o ..\..\..\ui\terraView\countComputing.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\countComputing.ui -i countComputing.h -o ..\..\..\ui\terraView\countComputing.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\countComputing.h -o ..\..\..\moc\terraView\moc_countComputing.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\countComputing.h;..\..\..\ui\terraView\countComputing.cpp;..\..\..\moc\terraView\moc_countComputing.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createBuffersWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createBuffersWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createBuffersWindow.ui -o ..\..\..\ui\terraView\createBuffersWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createBuffersWindow.ui -i createBuffersWindow.h -o ..\..\..\ui\terraView\createBuffersWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createBuffersWindow.h -o ..\..\..\moc\terraView\moc_createBuffersWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createBuffersWindow.h;..\..\..\ui\terraView\createBuffersWindow.cpp;..\..\..\moc\terraView\moc_createBuffersWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createBuffersWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createBuffersWindow.ui -o ..\..\..\ui\terraView\createBuffersWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createBuffersWindow.ui -i createBuffersWindow.h -o ..\..\..\ui\terraView\createBuffersWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createBuffersWindow.h -o ..\..\..\moc\terraView\moc_createBuffersWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createBuffersWindow.h;..\..\..\ui\terraView\createBuffersWindow.cpp;..\..\..\moc\terraView\moc_createBuffersWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createCells.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createCells.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createCells.ui -o ..\..\..\ui\terraView\createCells.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createCells.ui -i createCells.h -o ..\..\..\ui\terraView\createCells.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createCells.h -o ..\..\..\moc\terraView\moc_createCells.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createCells.h;..\..\..\ui\terraView\createCells.cpp;..\..\..\moc\terraView\moc_createCells.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createCells.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createCells.ui -o ..\..\..\ui\terraView\createCells.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createCells.ui -i createCells.h -o ..\..\..\ui\terraView\createCells.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createCells.h -o ..\..\..\moc\terraView\moc_createCells.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createCells.h;..\..\..\ui\terraView\createCells.cpp;..\..\..\moc\terraView\moc_createCells.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createLayerFromTheme.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createLayerFromTheme.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createLayerFromTheme.ui -o ..\..\..\ui\terraView\createLayerFromTheme.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createLayerFromTheme.ui -i createLayerFromTheme.h -o ..\..\..\ui\terraView\createLayerFromTheme.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createLayerFromTheme.h -o ..\..\..\moc\terraView\moc_createLayerFromTheme.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createLayerFromTheme.h;..\..\..\ui\terraView\createLayerFromTheme.cpp;..\..\..\moc\terraView\moc_createLayerFromTheme.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createLayerFromTheme.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createLayerFromTheme.ui -o ..\..\..\ui\terraView\createLayerFromTheme.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createLayerFromTheme.ui -i createLayerFromTheme.h -o ..\..\..\ui\terraView\createLayerFromTheme.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createLayerFromTheme.h -o ..\..\..\moc\terraView\moc_createLayerFromTheme.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createLayerFromTheme.h;..\..\..\ui\terraView\createLayerFromTheme.cpp;..\..\..\moc\terraView\moc_createLayerFromTheme.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createProxMatrix.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createProxMatrix.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createProxMatrix.ui -o ..\..\..\ui\terraView\createProxMatrix.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createProxMatrix.ui -i createProxMatrix.h -o ..\..\..\ui\terraView\createProxMatrix.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createProxMatrix.h -o ..\..\..\moc\terraView\moc_createProxMatrix.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createProxMatrix.h;..\..\..\ui\terraView\createProxMatrix.cpp;..\..\..\moc\terraView\moc_createProxMatrix.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createProxMatrix.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createProxMatrix.ui -o ..\..\..\ui\terraView\createProxMatrix.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createProxMatrix.ui -i createProxMatrix.h -o ..\..\..\ui\terraView\createProxMatrix.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createProxMatrix.h -o ..\..\..\moc\terraView\moc_createProxMatrix.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createProxMatrix.h;..\..\..\ui\terraView\createProxMatrix.cpp;..\..\..\moc\terraView\moc_createProxMatrix.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createTable.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTable.ui -o ..\..\..\ui\terraView\createTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTable.ui -i createTable.h -o ..\..\..\ui\terraView\createTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createTable.h -o ..\..\..\moc\terraView\moc_createTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createTable.h;..\..\..\ui\terraView\createTable.cpp;..\..\..\moc\terraView\moc_createTable.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTable.ui -o ..\..\..\ui\terraView\createTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTable.ui -i createTable.h -o ..\..\..\ui\terraView\createTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createTable.h -o ..\..\..\moc\terraView\moc_createTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createTable.h;..\..\..\ui\terraView\createTable.cpp;..\..\..\moc\terraView\moc_createTable.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createTextRepresentation.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createTextRepresentation.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTextRepresentation.ui -o ..\..\..\ui\terraView\createTextRepresentation.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTextRepresentation.ui -i createTextRepresentation.h -o ..\..\..\ui\terraView\createTextRepresentation.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createTextRepresentation.h -o ..\..\..\moc\terraView\moc_createTextRepresentation.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createTextRepresentation.h;..\..\..\ui\terraView\createTextRepresentation.cpp;..\..\..\moc\terraView\moc_createTextRepresentation.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createTextRepresentation.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTextRepresentation.ui -o ..\..\..\ui\terraView\createTextRepresentation.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createTextRepresentation.ui -i createTextRepresentation.h -o ..\..\..\ui\terraView\createTextRepresentation.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createTextRepresentation.h -o ..\..\..\moc\terraView\moc_createTextRepresentation.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createTextRepresentation.h;..\..\..\ui\terraView\createTextRepresentation.cpp;..\..\..\moc\terraView\moc_createTextRepresentation.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\createThemeFromTheme.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createThemeFromTheme.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createThemeFromTheme.ui -o ..\..\..\ui\terraView\createThemeFromTheme.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createThemeFromTheme.ui -i createThemeFromTheme.h -o ..\..\..\ui\terraView\createThemeFromTheme.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createThemeFromTheme.h -o ..\..\..\moc\terraView\moc_createThemeFromTheme.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createThemeFromTheme.h;..\..\..\ui\terraView\createThemeFromTheme.cpp;..\..\..\moc\terraView\moc_createThemeFromTheme.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\createThemeFromTheme.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createThemeFromTheme.ui -o ..\..\..\ui\terraView\createThemeFromTheme.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\createThemeFromTheme.ui -i createThemeFromTheme.h -o ..\..\..\ui\terraView\createThemeFromTheme.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\createThemeFromTheme.h -o ..\..\..\moc\terraView\moc_createThemeFromTheme.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\createThemeFromTheme.h;..\..\..\ui\terraView\createThemeFromTheme.cpp;..\..\..\moc\terraView\moc_createThemeFromTheme.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\database.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\database.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\database.ui -o ..\..\..\ui\terraView\database.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\database.ui -i database.h -o ..\..\..\ui\terraView\database.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\database.h -o ..\..\..\moc\terraView\moc_database.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\database.h;..\..\..\ui\terraView\database.cpp;..\..\..\moc\terraView\moc_database.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\database.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\database.ui -o ..\..\..\ui\terraView\database.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\database.ui -i database.h -o ..\..\..\ui\terraView\database.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\database.h -o ..\..\..\moc\terraView\moc_database.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\database.h;..\..\..\ui\terraView\database.cpp;..\..\..\moc\terraView\moc_database.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\databaseProp.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\databaseProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\databaseProp.ui -o ..\..\..\ui\terraView\databaseProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\databaseProp.ui -i databaseProp.h -o ..\..\..\ui\terraView\databaseProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\databaseProp.h -o ..\..\..\moc\terraView\moc_databaseProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\databaseProp.h;..\..\..\ui\terraView\databaseProp.cpp;..\..\..\moc\terraView\moc_databaseProp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\databaseProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\databaseProp.ui -o ..\..\..\ui\terraView\databaseProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\databaseProp.ui -i databaseProp.h -o ..\..\..\ui\terraView\databaseProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\databaseProp.h -o ..\..\..\moc\terraView\moc_databaseProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\databaseProp.h;..\..\..\ui\terraView\databaseProp.cpp;..\..\..\moc\terraView\moc_databaseProp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\display.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\display.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\display.ui -o ..\..\..\ui\terraView\display.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\display.ui -i display.h -o ..\..\..\ui\terraView\display.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\display.h -o ..\..\..\moc\terraView\moc_display.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\display.h;..\..\..\ui\terraView\display.cpp;..\..\..\moc\terraView\moc_display.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\display.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\display.ui -o ..\..\..\ui\terraView\display.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\display.ui -i display.h -o ..\..\..\ui\terraView\display.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\display.h -o ..\..\..\moc\terraView\moc_display.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\display.h;..\..\..\ui\terraView\display.cpp;..\..\..\moc\terraView\moc_display.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\displaySize.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\displaySize.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\displaySize.ui -o ..\..\..\ui\terraView\displaySize.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\displaySize.ui -i displaySize.h -o ..\..\..\ui\terraView\displaySize.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\displaySize.h -o ..\..\..\moc\terraView\moc_displaySize.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\displaySize.h;..\..\..\ui\terraView\displaySize.cpp;..\..\..\moc\terraView\moc_displaySize.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\displaySize.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\displaySize.ui -o ..\..\..\ui\terraView\displaySize.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\displaySize.ui -i displaySize.h -o ..\..\..\ui\terraView\displaySize.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\displaySize.h -o ..\..\..\moc\terraView\moc_displaySize.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\displaySize.h;..\..\..\ui\terraView\displaySize.cpp;..\..\..\moc\terraView\moc_displaySize.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\exportLayersThemes.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\exportLayersThemes.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportLayersThemes.ui -o ..\..\..\ui\terraView\exportLayersThemes.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportLayersThemes.ui -i exportLayersThemes.h -o ..\..\..\ui\terraView\exportLayersThemes.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\exportLayersThemes.h -o ..\..\..\moc\terraView\moc_exportLayersThemes.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\exportLayersThemes.h;..\..\..\ui\terraView\exportLayersThemes.cpp;..\..\..\moc\terraView\moc_exportLayersThemes.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\exportLayersThemes.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportLayersThemes.ui -o ..\..\..\ui\terraView\exportLayersThemes.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportLayersThemes.ui -i exportLayersThemes.h -o ..\..\..\ui\terraView\exportLayersThemes.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\exportLayersThemes.h -o ..\..\..\moc\terraView\moc_exportLayersThemes.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\exportLayersThemes.h;..\..\..\ui\terraView\exportLayersThemes.cpp;..\..\..\moc\terraView\moc_exportLayersThemes.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\exportWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\exportWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportWindow.ui -o ..\..\..\ui\terraView\exportWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportWindow.ui -i exportWindow.h -o ..\..\..\ui\terraView\exportWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\exportWindow.h -o ..\..\..\moc\terraView\moc_exportWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\exportWindow.h;..\..\..\ui\terraView\exportWindow.cpp;..\..\..\moc\terraView\moc_exportWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\exportWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportWindow.ui -o ..\..\..\ui\terraView\exportWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\exportWindow.ui -i exportWindow.h -o ..\..\..\ui\terraView\exportWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\exportWindow.h -o ..\..\..\moc\terraView\moc_exportWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\exportWindow.h;..\..\..\ui\terraView\exportWindow.cpp;..\..\..\moc\terraView\moc_exportWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\generateSamplePoints.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\generateSamplePoints.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\generateSamplePoints.ui -o ..\..\..\ui\terraView\generateSamplePoints.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\generateSamplePoints.ui -i generateSamplePoints.h -o ..\..\..\ui\terraView\generateSamplePoints.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\generateSamplePoints.h -o ..\..\..\moc\terraView\moc_generateSamplePoints.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\generateSamplePoints.h;..\..\..\ui\terraView\generateSamplePoints.cpp;..\..\..\moc\terraView\moc_generateSamplePoints.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\generateSamplePoints.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\generateSamplePoints.ui -o ..\..\..\ui\terraView\generateSamplePoints.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\generateSamplePoints.ui -i generateSamplePoints.h -o ..\..\..\ui\terraView\generateSamplePoints.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\generateSamplePoints.h -o ..\..\..\moc\terraView\moc_generateSamplePoints.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\generateSamplePoints.h;..\..\..\ui\terraView\generateSamplePoints.cpp;..\..\..\moc\terraView\moc_generateSamplePoints.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geographicalGrid.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geographicalGrid.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geographicalGrid.ui -o ..\..\..\ui\terraView\geographicalGrid.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geographicalGrid.ui -i geographicalGrid.h -o ..\..\..\ui\terraView\geographicalGrid.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geographicalGrid.h -o ..\..\..\moc\terraView\moc_geographicalGrid.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geographicalGrid.h;..\..\..\ui\terraView\geographicalGrid.cpp;..\..\..\moc\terraView\moc_geographicalGrid.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geographicalGrid.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geographicalGrid.ui -o ..\..\..\ui\terraView\geographicalGrid.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geographicalGrid.ui -i geographicalGrid.h -o ..\..\..\ui\terraView\geographicalGrid.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geographicalGrid.h -o ..\..\..\moc\terraView\moc_geographicalGrid.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geographicalGrid.h;..\..\..\ui\terraView\geographicalGrid.cpp;..\..\..\moc\terraView\moc_geographicalGrid.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAdd.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAdd.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAdd.ui -o ..\..\..\ui\terraView\geoOpAdd.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAdd.ui -i geoOpAdd.h -o ..\..\..\ui\terraView\geoOpAdd.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAdd.h -o ..\..\..\moc\terraView\moc_geoOpAdd.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAdd.h;..\..\..\ui\terraView\geoOpAdd.cpp;..\..\..\moc\terraView\moc_geoOpAdd.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAdd.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAdd.ui -o ..\..\..\ui\terraView\geoOpAdd.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAdd.ui -i geoOpAdd.h -o ..\..\..\ui\terraView\geoOpAdd.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAdd.h -o ..\..\..\moc\terraView\moc_geoOpAdd.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAdd.h;..\..\..\ui\terraView\geoOpAdd.cpp;..\..\..\moc\terraView\moc_geoOpAdd.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAggregation.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAggregation.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAggregation.ui -o ..\..\..\ui\terraView\geoOpAggregation.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAggregation.ui -i geoOpAggregation.h -o ..\..\..\ui\terraView\geoOpAggregation.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAggregation.h -o ..\..\..\moc\terraView\moc_geoOpAggregation.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAggregation.h;..\..\..\ui\terraView\geoOpAggregation.cpp;..\..\..\moc\terraView\moc_geoOpAggregation.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAggregation.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAggregation.ui -o ..\..\..\ui\terraView\geoOpAggregation.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAggregation.ui -i geoOpAggregation.h -o ..\..\..\ui\terraView\geoOpAggregation.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAggregation.h -o ..\..\..\moc\terraView\moc_geoOpAggregation.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAggregation.h;..\..\..\ui\terraView\geoOpAggregation.cpp;..\..\..\moc\terraView\moc_geoOpAggregation.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui -o ..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui -i geoOpAssignDataLocationCollect.h -o ..\..\..\ui\terraView\geoOpAssignDataLocationCollect.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h -o ..\..\..\moc\terraView\moc_geoOpAssignDataLocationCollect.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h;..\..\..\ui\terraView\geoOpAssignDataLocationCollect.cpp;..\..\..\moc\terraView\moc_geoOpAssignDataLocationCollect.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui -o ..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationCollect.ui -i geoOpAssignDataLocationCollect.h -o ..\..\..\ui\terraView\geoOpAssignDataLocationCollect.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h -o ..\..\..\moc\terraView\moc_geoOpAssignDataLocationCollect.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAssignDataLocationCollect.h;..\..\..\ui\terraView\geoOpAssignDataLocationCollect.cpp;..\..\..\moc\terraView\moc_geoOpAssignDataLocationCollect.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui -o ..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui -i geoOpAssignDataLocationDistribute.h -o ..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h -o ..\..\..\moc\terraView\moc_geoOpAssignDataLocationDistribute.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h;..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.cpp;..\..\..\moc\terraView\moc_geoOpAssignDataLocationDistribute.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui -o ..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpAssignDataLocationDistribute.ui -i geoOpAssignDataLocationDistribute.h -o ..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h -o ..\..\..\moc\terraView\moc_geoOpAssignDataLocationDistribute.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.h;..\..\..\ui\terraView\geoOpAssignDataLocationDistribute.cpp;..\..\..\moc\terraView\moc_geoOpAssignDataLocationDistribute.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpOverlayDifference.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpOverlayDifference.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayDifference.ui -o ..\..\..\ui\terraView\geoOpOverlayDifference.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayDifference.ui -i geoOpOverlayDifference.h -o ..\..\..\ui\terraView\geoOpOverlayDifference.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpOverlayDifference.h -o ..\..\..\moc\terraView\moc_geoOpOverlayDifference.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpOverlayDifference.h;..\..\..\ui\terraView\geoOpOverlayDifference.cpp;..\..\..\moc\terraView\moc_geoOpOverlayDifference.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpOverlayDifference.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayDifference.ui -o ..\..\..\ui\terraView\geoOpOverlayDifference.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayDifference.ui -i geoOpOverlayDifference.h -o ..\..\..\ui\terraView\geoOpOverlayDifference.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpOverlayDifference.h -o ..\..\..\moc\terraView\moc_geoOpOverlayDifference.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpOverlayDifference.h;..\..\..\ui\terraView\geoOpOverlayDifference.cpp;..\..\..\moc\terraView\moc_geoOpOverlayDifference.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpOverlayIntersection.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpOverlayIntersection.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayIntersection.ui -o ..\..\..\ui\terraView\geoOpOverlayIntersection.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayIntersection.ui -i geoOpOverlayIntersection.h -o ..\..\..\ui\terraView\geoOpOverlayIntersection.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpOverlayIntersection.h -o ..\..\..\moc\terraView\moc_geoOpOverlayIntersection.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpOverlayIntersection.h;..\..\..\ui\terraView\geoOpOverlayIntersection.cpp;..\..\..\moc\terraView\moc_geoOpOverlayIntersection.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpOverlayIntersection.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayIntersection.ui -o ..\..\..\ui\terraView\geoOpOverlayIntersection.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayIntersection.ui -i geoOpOverlayIntersection.h -o ..\..\..\ui\terraView\geoOpOverlayIntersection.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpOverlayIntersection.h -o ..\..\..\moc\terraView\moc_geoOpOverlayIntersection.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpOverlayIntersection.h;..\..\..\ui\terraView\geoOpOverlayIntersection.cpp;..\..\..\moc\terraView\moc_geoOpOverlayIntersection.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\geoOpOverlayUnion.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpOverlayUnion.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayUnion.ui -o ..\..\..\ui\terraView\geoOpOverlayUnion.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayUnion.ui -i geoOpOverlayUnion.h -o ..\..\..\ui\terraView\geoOpOverlayUnion.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpOverlayUnion.h -o ..\..\..\moc\terraView\moc_geoOpOverlayUnion.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpOverlayUnion.h;..\..\..\ui\terraView\geoOpOverlayUnion.cpp;..\..\..\moc\terraView\moc_geoOpOverlayUnion.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\geoOpOverlayUnion.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayUnion.ui -o ..\..\..\ui\terraView\geoOpOverlayUnion.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\geoOpOverlayUnion.ui -i geoOpOverlayUnion.h -o ..\..\..\ui\terraView\geoOpOverlayUnion.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\geoOpOverlayUnion.h -o ..\..\..\moc\terraView\moc_geoOpOverlayUnion.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\geoOpOverlayUnion.h;..\..\..\ui\terraView\geoOpOverlayUnion.cpp;..\..\..\moc\terraView\moc_geoOpOverlayUnion.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphic.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphic.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic.ui -o ..\..\..\ui\terraView\graphic.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic.ui -i graphic.h -o ..\..\..\ui\terraView\graphic.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphic.h -o ..\..\..\moc\terraView\moc_graphic.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphic.h;..\..\..\ui\terraView\graphic.cpp;..\..\..\moc\terraView\moc_graphic.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphic.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic.ui -o ..\..\..\ui\terraView\graphic.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic.ui -i graphic.h -o ..\..\..\ui\terraView\graphic.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphic.h -o ..\..\..\moc\terraView\moc_graphic.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphic.h;..\..\..\ui\terraView\graphic.cpp;..\..\..\moc\terraView\moc_graphic.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphic3DWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphic3DWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic3DWindow.ui -o ..\..\..\ui\terraView\graphic3DWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic3DWindow.ui -i graphic3DWindow.h -o ..\..\..\ui\terraView\graphic3DWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphic3DWindow.h -o ..\..\..\moc\terraView\moc_graphic3DWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphic3DWindow.h;..\..\..\ui\terraView\graphic3DWindow.cpp;..\..\..\moc\terraView\moc_graphic3DWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphic3DWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic3DWindow.ui -o ..\..\..\ui\terraView\graphic3DWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphic3DWindow.ui -i graphic3DWindow.h -o ..\..\..\ui\terraView\graphic3DWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphic3DWindow.h -o ..\..\..\moc\terraView\moc_graphic3DWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphic3DWindow.h;..\..\..\ui\terraView\graphic3DWindow.cpp;..\..\..\moc\terraView\moc_graphic3DWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphicConfigurationWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphicConfigurationWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicConfigurationWindow.ui -o ..\..\..\ui\terraView\graphicConfigurationWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicConfigurationWindow.ui -i graphicConfigurationWindow.h -o ..\..\..\ui\terraView\graphicConfigurationWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphicConfigurationWindow.h -o ..\..\..\moc\terraView\moc_graphicConfigurationWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphicConfigurationWindow.h;..\..\..\ui\terraView\graphicConfigurationWindow.cpp;..\..\..\moc\terraView\moc_graphicConfigurationWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphicConfigurationWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicConfigurationWindow.ui -o ..\..\..\ui\terraView\graphicConfigurationWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicConfigurationWindow.ui -i graphicConfigurationWindow.h -o ..\..\..\ui\terraView\graphicConfigurationWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphicConfigurationWindow.h -o ..\..\..\moc\terraView\moc_graphicConfigurationWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphicConfigurationWindow.h;..\..\..\ui\terraView\graphicConfigurationWindow.cpp;..\..\..\moc\terraView\moc_graphicConfigurationWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\graphicParams.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphicParams.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicParams.ui -o ..\..\..\ui\terraView\graphicParams.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicParams.ui -i graphicParams.h -o ..\..\..\ui\terraView\graphicParams.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphicParams.h -o ..\..\..\moc\terraView\moc_graphicParams.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphicParams.h;..\..\..\ui\terraView\graphicParams.cpp;..\..\..\moc\terraView\moc_graphicParams.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\graphicParams.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicParams.ui -o ..\..\..\ui\terraView\graphicParams.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\graphicParams.ui -i graphicParams.h -o ..\..\..\ui\terraView\graphicParams.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\graphicParams.h -o ..\..\..\moc\terraView\moc_graphicParams.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\graphicParams.h;..\..\..\ui\terraView\graphicParams.cpp;..\..\..\moc\terraView\moc_graphicParams.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\histogramBuildForm.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\histogramBuildForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\histogramBuildForm.ui -o ..\..\..\ui\terraView\histogramBuildForm.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\histogramBuildForm.ui -i histogramBuildForm.h -o ..\..\..\ui\terraView\histogramBuildForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\histogramBuildForm.h -o ..\..\..\moc\terraView\moc_histogramBuildForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\histogramBuildForm.h;..\..\..\ui\terraView\histogramBuildForm.cpp;..\..\..\moc\terraView\moc_histogramBuildForm.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\histogramBuildForm.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\histogramBuildForm.ui -o ..\..\..\ui\terraView\histogramBuildForm.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\histogramBuildForm.ui -i histogramBuildForm.h -o ..\..\..\ui\terraView\histogramBuildForm.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\histogramBuildForm.h -o ..\..\..\moc\terraView\moc_histogramBuildForm.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\histogramBuildForm.h;..\..\..\ui\terraView\histogramBuildForm.cpp;..\..\..\moc\terraView\moc_histogramBuildForm.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\import.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\import.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\import.ui -o ..\..\..\ui\terraView\import.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\import.ui -i import.h -o ..\..\..\ui\terraView\import.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\import.h -o ..\..\..\moc\terraView\moc_import.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\import.h;..\..\..\ui\terraView\import.cpp;..\..\..\moc\terraView\moc_import.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\import.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\import.ui -o ..\..\..\ui\terraView\import.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\import.ui -i import.h -o ..\..\..\ui\terraView\import.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\import.h -o ..\..\..\moc\terraView\moc_import.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\import.h;..\..\..\ui\terraView\import.cpp;..\..\..\moc\terraView\moc_import.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importRasterSimple.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importRasterSimple.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importRasterSimple.ui -o ..\..\..\ui\terraView\importRasterSimple.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importRasterSimple.ui -i importRasterSimple.h -o ..\..\..\ui\terraView\importRasterSimple.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importRasterSimple.h -o ..\..\..\moc\terraView\moc_importRasterSimple.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importRasterSimple.h;..\..\..\ui\terraView\importRasterSimple.cpp;..\..\..\moc\terraView\moc_importRasterSimple.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importRasterSimple.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importRasterSimple.ui -o ..\..\..\ui\terraView\importRasterSimple.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importRasterSimple.ui -i importRasterSimple.h -o ..\..\..\ui\terraView\importRasterSimple.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importRasterSimple.h -o ..\..\..\moc\terraView\moc_importRasterSimple.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importRasterSimple.h;..\..\..\ui\terraView\importRasterSimple.cpp;..\..\..\moc\terraView\moc_importRasterSimple.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTable.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTable.ui -o ..\..\..\ui\terraView\importTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTable.ui -i importTable.h -o ..\..\..\ui\terraView\importTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTable.h -o ..\..\..\moc\terraView\moc_importTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTable.h;..\..\..\ui\terraView\importTable.cpp;..\..\..\moc\terraView\moc_importTable.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTable.ui -o ..\..\..\ui\terraView\importTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTable.ui -i importTable.h -o ..\..\..\ui\terraView\importTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTable.h -o ..\..\..\moc\terraView\moc_importTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTable.h;..\..\..\ui\terraView\importTable.cpp;..\..\..\moc\terraView\moc_importTable.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTablePoints.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTablePoints.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTablePoints.ui -o ..\..\..\ui\terraView\importTablePoints.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTablePoints.ui -i importTablePoints.h -o ..\..\..\ui\terraView\importTablePoints.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTablePoints.h -o ..\..\..\moc\terraView\moc_importTablePoints.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTablePoints.h;..\..\..\ui\terraView\importTablePoints.cpp;..\..\..\moc\terraView\moc_importTablePoints.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTablePoints.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTablePoints.ui -o ..\..\..\ui\terraView\importTablePoints.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTablePoints.ui -i importTablePoints.h -o ..\..\..\ui\terraView\importTablePoints.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTablePoints.h -o ..\..\..\moc\terraView\moc_importTablePoints.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTablePoints.h;..\..\..\ui\terraView\importTablePoints.cpp;..\..\..\moc\terraView\moc_importTablePoints.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTbl.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTbl.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTbl.ui -o ..\..\..\ui\terraView\importTbl.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTbl.ui -i importTbl.h -o ..\..\..\ui\terraView\importTbl.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTbl.h -o ..\..\..\moc\terraView\moc_importTbl.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTbl.h;..\..\..\ui\terraView\importTbl.cpp;..\..\..\moc\terraView\moc_importTbl.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTbl.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTbl.ui -o ..\..\..\ui\terraView\importTbl.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTbl.ui -i importTbl.h -o ..\..\..\ui\terraView\importTbl.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTbl.h -o ..\..\..\moc\terraView\moc_importTbl.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTbl.h;..\..\..\ui\terraView\importTbl.cpp;..\..\..\moc\terraView\moc_importTbl.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\importTblPoints.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTblPoints.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTblPoints.ui -o ..\..\..\ui\terraView\importTblPoints.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTblPoints.ui -i importTblPoints.h -o ..\..\..\ui\terraView\importTblPoints.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTblPoints.h -o ..\..\..\moc\terraView\moc_importTblPoints.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTblPoints.h;..\..\..\ui\terraView\importTblPoints.cpp;..\..\..\moc\terraView\moc_importTblPoints.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\importTblPoints.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTblPoints.ui -o ..\..\..\ui\terraView\importTblPoints.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\importTblPoints.ui -i importTblPoints.h -o ..\..\..\ui\terraView\importTblPoints.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\importTblPoints.h -o ..\..\..\moc\terraView\moc_importTblPoints.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\importTblPoints.h;..\..\..\ui\terraView\importTblPoints.cpp;..\..\..\moc\terraView\moc_importTblPoints.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\insertPoint.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\insertPoint.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertPoint.ui -o ..\..\..\ui\terraView\insertPoint.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertPoint.ui -i insertPoint.h -o ..\..\..\ui\terraView\insertPoint.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\insertPoint.h -o ..\..\..\moc\terraView\moc_insertPoint.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\insertPoint.h;..\..\..\ui\terraView\insertPoint.cpp;..\..\..\moc\terraView\moc_insertPoint.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\insertPoint.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertPoint.ui -o ..\..\..\ui\terraView\insertPoint.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertPoint.ui -i insertPoint.h -o ..\..\..\ui\terraView\insertPoint.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\insertPoint.h -o ..\..\..\moc\terraView\moc_insertPoint.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\insertPoint.h;..\..\..\ui\terraView\insertPoint.cpp;..\..\..\moc\terraView\moc_insertPoint.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\insertSymbol.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\insertSymbol.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertSymbol.ui -o ..\..\..\ui\terraView\insertSymbol.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertSymbol.ui -i insertSymbol.h -o ..\..\..\ui\terraView\insertSymbol.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\insertSymbol.h -o ..\..\..\moc\terraView\moc_insertSymbol.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\insertSymbol.h;..\..\..\ui\terraView\insertSymbol.cpp;..\..\..\moc\terraView\moc_insertSymbol.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\insertSymbol.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertSymbol.ui -o ..\..\..\ui\terraView\insertSymbol.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertSymbol.ui -i insertSymbol.h -o ..\..\..\ui\terraView\insertSymbol.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\insertSymbol.h -o ..\..\..\moc\terraView\moc_insertSymbol.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\insertSymbol.h;..\..\..\ui\terraView\insertSymbol.cpp;..\..\..\moc\terraView\moc_insertSymbol.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\insertText.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\insertText.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertText.ui -o ..\..\..\ui\terraView\insertText.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertText.ui -i insertText.h -o ..\..\..\ui\terraView\insertText.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\insertText.h -o ..\..\..\moc\terraView\moc_insertText.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\insertText.h;..\..\..\ui\terraView\insertText.cpp;..\..\..\moc\terraView\moc_insertText.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\insertText.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertText.ui -o ..\..\..\ui\terraView\insertText.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\insertText.ui -i insertText.h -o ..\..\..\ui\terraView\insertText.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\insertText.h -o ..\..\..\moc\terraView\moc_insertText.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\insertText.h;..\..\..\ui\terraView\insertText.cpp;..\..\..\moc\terraView\moc_insertText.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\kernelRatioWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\kernelRatioWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelRatioWindow.ui -o ..\..\..\ui\terraView\kernelRatioWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelRatioWindow.ui -i kernelRatioWindow.h -o ..\..\..\ui\terraView\kernelRatioWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\kernelRatioWindow.h -o ..\..\..\moc\terraView\moc_kernelRatioWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\kernelRatioWindow.h;..\..\..\ui\terraView\kernelRatioWindow.cpp;..\..\..\moc\terraView\moc_kernelRatioWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\kernelRatioWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelRatioWindow.ui -o ..\..\..\ui\terraView\kernelRatioWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelRatioWindow.ui -i kernelRatioWindow.h -o ..\..\..\ui\terraView\kernelRatioWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\kernelRatioWindow.h -o ..\..\..\moc\terraView\moc_kernelRatioWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\kernelRatioWindow.h;..\..\..\ui\terraView\kernelRatioWindow.cpp;..\..\..\moc\terraView\moc_kernelRatioWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\kernelWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\kernelWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelWindow.ui -o ..\..\..\ui\terraView\kernelWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelWindow.ui -i kernelWindow.h -o ..\..\..\ui\terraView\kernelWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\kernelWindow.h -o ..\..\..\moc\terraView\moc_kernelWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\kernelWindow.h;..\..\..\ui\terraView\kernelWindow.cpp;..\..\..\moc\terraView\moc_kernelWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\kernelWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelWindow.ui -o ..\..\..\ui\terraView\kernelWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\kernelWindow.ui -i kernelWindow.h -o ..\..\..\ui\terraView\kernelWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\kernelWindow.h -o ..\..\..\moc\terraView\moc_kernelWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\kernelWindow.h;..\..\..\ui\terraView\kernelWindow.cpp;..\..\..\moc\terraView\moc_kernelWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\layerProp.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\layerProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\layerProp.ui -o ..\..\..\ui\terraView\layerProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\layerProp.ui -i layerProp.h -o ..\..\..\ui\terraView\layerProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\layerProp.h -o ..\..\..\moc\terraView\moc_layerProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\layerProp.h;..\..\..\ui\terraView\layerProp.cpp;..\..\..\moc\terraView\moc_layerProp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\layerProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\layerProp.ui -o ..\..\..\ui\terraView\layerProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\layerProp.ui -i layerProp.h -o ..\..\..\ui\terraView\layerProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\layerProp.h -o ..\..\..\moc\terraView\moc_layerProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\layerProp.h;..\..\..\ui\terraView\layerProp.cpp;..\..\..\moc\terraView\moc_layerProp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\lbsDefinition.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\lbsDefinition.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\lbsDefinition.ui -o ..\..\..\ui\terraView\lbsDefinition.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\lbsDefinition.ui -i lbsDefinition.h -o ..\..\..\ui\terraView\lbsDefinition.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\lbsDefinition.h -o ..\..\..\moc\terraView\moc_lbsDefinition.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\lbsDefinition.h;..\..\..\ui\terraView\lbsDefinition.cpp;..\..\..\moc\terraView\moc_lbsDefinition.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\lbsDefinition.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\lbsDefinition.ui -o ..\..\..\ui\terraView\lbsDefinition.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\lbsDefinition.ui -i lbsDefinition.h -o ..\..\..\ui\terraView\lbsDefinition.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\lbsDefinition.h -o ..\..\..\moc\terraView\moc_lbsDefinition.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\lbsDefinition.h;..\..\..\ui\terraView\lbsDefinition.cpp;..\..\..\moc\terraView\moc_lbsDefinition.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\legendWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\legendWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\legendWindow.ui -o ..\..\..\ui\terraView\legendWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\legendWindow.ui -i legendWindow.h -o ..\..\..\ui\terraView\legendWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\legendWindow.h -o ..\..\..\moc\terraView\moc_legendWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\legendWindow.h;..\..\..\ui\terraView\legendWindow.cpp;..\..\..\moc\terraView\moc_legendWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\legendWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\legendWindow.ui -o ..\..\..\ui\terraView\legendWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\legendWindow.ui -i legendWindow.h -o ..\..\..\ui\terraView\legendWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\legendWindow.h -o ..\..\..\moc\terraView\moc_legendWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\legendWindow.h;..\..\..\ui\terraView\legendWindow.cpp;..\..\..\moc\terraView\moc_legendWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\linkExtTable.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\linkExtTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\linkExtTable.ui -o ..\..\..\ui\terraView\linkExtTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\linkExtTable.ui -i linkExtTable.h -o ..\..\..\ui\terraView\linkExtTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\linkExtTable.h -o ..\..\..\moc\terraView\moc_linkExtTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\linkExtTable.h;..\..\..\ui\terraView\linkExtTable.cpp;..\..\..\moc\terraView\moc_linkExtTable.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\linkExtTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\linkExtTable.ui -o ..\..\..\ui\terraView\linkExtTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\linkExtTable.ui -i linkExtTable.h -o ..\..\..\ui\terraView\linkExtTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\linkExtTable.h -o ..\..\..\moc\terraView\moc_linkExtTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\linkExtTable.h;..\..\..\ui\terraView\linkExtTable.cpp;..\..\..\moc\terraView\moc_linkExtTable.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\localBayesWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\localBayesWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\localBayesWindow.ui -o ..\..\..\ui\terraView\localBayesWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\localBayesWindow.ui -i localBayesWindow.h -o ..\..\..\ui\terraView\localBayesWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\localBayesWindow.h -o ..\..\..\moc\terraView\moc_localBayesWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\localBayesWindow.h;..\..\..\ui\terraView\localBayesWindow.cpp;..\..\..\moc\terraView\moc_localBayesWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\localBayesWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\localBayesWindow.ui -o ..\..\..\ui\terraView\localBayesWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\localBayesWindow.ui -i localBayesWindow.h -o ..\..\..\ui\terraView\localBayesWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\localBayesWindow.h -o ..\..\..\moc\terraView\moc_localBayesWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\localBayesWindow.h;..\..\..\ui\terraView\localBayesWindow.cpp;..\..\..\moc\terraView\moc_localBayesWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\pieBarChart.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\pieBarChart.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\pieBarChart.ui -o ..\..\..\ui\terraView\pieBarChart.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\pieBarChart.ui -i pieBarChart.h -o ..\..\..\ui\terraView\pieBarChart.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\pieBarChart.h -o ..\..\..\moc\terraView\moc_pieBarChart.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\pieBarChart.h;..\..\..\ui\terraView\pieBarChart.cpp;..\..\..\moc\terraView\moc_pieBarChart.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\pieBarChart.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\pieBarChart.ui -o ..\..\..\ui\terraView\pieBarChart.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\pieBarChart.ui -i pieBarChart.h -o ..\..\..\ui\terraView\pieBarChart.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\pieBarChart.h -o ..\..\..\moc\terraView\moc_pieBarChart.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\pieBarChart.h;..\..\..\ui\terraView\pieBarChart.cpp;..\..\..\moc\terraView\moc_pieBarChart.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\printFileResolution.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\printFileResolution.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\printFileResolution.ui -o ..\..\..\ui\terraView\printFileResolution.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\printFileResolution.ui -i printFileResolution.h -o ..\..\..\ui\terraView\printFileResolution.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\printFileResolution.h -o ..\..\..\moc\terraView\moc_printFileResolution.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\printFileResolution.h;..\..\..\ui\terraView\printFileResolution.cpp;..\..\..\moc\terraView\moc_printFileResolution.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\printFileResolution.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\printFileResolution.ui -o ..\..\..\ui\terraView\printFileResolution.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\printFileResolution.ui -i printFileResolution.h -o ..\..\..\ui\terraView\printFileResolution.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\printFileResolution.h -o ..\..\..\moc\terraView\moc_printFileResolution.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\printFileResolution.h;..\..\..\ui\terraView\printFileResolution.cpp;..\..\..\moc\terraView\moc_printFileResolution.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\projection.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\projection.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\projection.ui -o ..\..\..\ui\terraView\projection.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\projection.ui -i projection.h -o ..\..\..\ui\terraView\projection.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\projection.h -o ..\..\..\moc\terraView\moc_projection.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\projection.h;..\..\..\ui\terraView\projection.cpp;..\..\..\moc\terraView\moc_projection.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\projection.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\projection.ui -o ..\..\..\ui\terraView\projection.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\projection.ui -i projection.h -o ..\..\..\ui\terraView\projection.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\projection.h -o ..\..\..\moc\terraView\moc_projection.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\projection.h;..\..\..\ui\terraView\projection.cpp;..\..\..\moc\terraView\moc_projection.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\query.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\query.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\query.ui -o ..\..\..\ui\terraView\query.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\query.ui -i query.h -o ..\..\..\ui\terraView\query.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\query.h -o ..\..\..\moc\terraView\moc_query.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\query.h;..\..\..\ui\terraView\query.cpp;..\..\..\moc\terraView\moc_query.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\query.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\query.ui -o ..\..\..\ui\terraView\query.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\query.ui -i query.h -o ..\..\..\ui\terraView\query.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\query.h -o ..\..\..\moc\terraView\moc_query.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\query.h;..\..\..\ui\terraView\query.cpp;..\..\..\moc\terraView\moc_query.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterColorCompositionWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterColorCompositionWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterColorCompositionWindow.ui -o ..\..\..\ui\terraView\rasterColorCompositionWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterColorCompositionWindow.ui -i rasterColorCompositionWindow.h -o ..\..\..\ui\terraView\rasterColorCompositionWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterColorCompositionWindow.h -o ..\..\..\moc\terraView\moc_rasterColorCompositionWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterColorCompositionWindow.h;..\..\..\ui\terraView\rasterColorCompositionWindow.cpp;..\..\..\moc\terraView\moc_rasterColorCompositionWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterColorCompositionWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterColorCompositionWindow.ui -o ..\..\..\ui\terraView\rasterColorCompositionWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterColorCompositionWindow.ui -i rasterColorCompositionWindow.h -o ..\..\..\ui\terraView\rasterColorCompositionWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterColorCompositionWindow.h -o ..\..\..\moc\terraView\moc_rasterColorCompositionWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterColorCompositionWindow.h;..\..\..\ui\terraView\rasterColorCompositionWindow.cpp;..\..\..\moc\terraView\moc_rasterColorCompositionWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterImportWizard.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterImportWizard.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterImportWizard.ui -o ..\..\..\ui\terraView\rasterImportWizard.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterImportWizard.ui -i rasterImportWizard.h -o ..\..\..\ui\terraView\rasterImportWizard.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterImportWizard.h -o ..\..\..\moc\terraView\moc_rasterImportWizard.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterImportWizard.h;..\..\..\ui\terraView\rasterImportWizard.cpp;..\..\..\moc\terraView\moc_rasterImportWizard.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterImportWizard.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterImportWizard.ui -o ..\..\..\ui\terraView\rasterImportWizard.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterImportWizard.ui -i rasterImportWizard.h -o ..\..\..\ui\terraView\rasterImportWizard.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterImportWizard.h -o ..\..\..\moc\terraView\moc_rasterImportWizard.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterImportWizard.h;..\..\..\ui\terraView\rasterImportWizard.cpp;..\..\..\moc\terraView\moc_rasterImportWizard.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterSlicingWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterSlicingWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterSlicingWindow.ui -o ..\..\..\ui\terraView\rasterSlicingWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterSlicingWindow.ui -i rasterSlicingWindow.h -o ..\..\..\ui\terraView\rasterSlicingWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterSlicingWindow.h -o ..\..\..\moc\terraView\moc_rasterSlicingWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterSlicingWindow.h;..\..\..\ui\terraView\rasterSlicingWindow.cpp;..\..\..\moc\terraView\moc_rasterSlicingWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterSlicingWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterSlicingWindow.ui -o ..\..\..\ui\terraView\rasterSlicingWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterSlicingWindow.ui -i rasterSlicingWindow.h -o ..\..\..\ui\terraView\rasterSlicingWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterSlicingWindow.h -o ..\..\..\moc\terraView\moc_rasterSlicingWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterSlicingWindow.h;..\..\..\ui\terraView\rasterSlicingWindow.cpp;..\..\..\moc\terraView\moc_rasterSlicingWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\rasterTransparency.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterTransparency.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterTransparency.ui -o ..\..\..\ui\terraView\rasterTransparency.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterTransparency.ui -i rasterTransparency.h -o ..\..\..\ui\terraView\rasterTransparency.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterTransparency.h -o ..\..\..\moc\terraView\moc_rasterTransparency.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterTransparency.h;..\..\..\ui\terraView\rasterTransparency.cpp;..\..\..\moc\terraView\moc_rasterTransparency.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\rasterTransparency.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterTransparency.ui -o ..\..\..\ui\terraView\rasterTransparency.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\rasterTransparency.ui -i rasterTransparency.h -o ..\..\..\ui\terraView\rasterTransparency.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\rasterTransparency.h -o ..\..\..\moc\terraView\moc_rasterTransparency.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\rasterTransparency.h;..\..\..\ui\terraView\rasterTransparency.cpp;..\..\..\moc\terraView\moc_rasterTransparency.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\removeTable.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\removeTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\removeTable.ui -o ..\..\..\ui\terraView\removeTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\removeTable.ui -i removeTable.h -o ..\..\..\ui\terraView\removeTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\removeTable.h -o ..\..\..\moc\terraView\moc_removeTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\removeTable.h;..\..\..\ui\terraView\removeTable.cpp;..\..\..\moc\terraView\moc_removeTable.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\removeTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\removeTable.ui -o ..\..\..\ui\terraView\removeTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\removeTable.ui -i removeTable.h -o ..\..\..\ui\terraView\removeTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\removeTable.h -o ..\..\..\moc\terraView\moc_removeTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\removeTable.h;..\..\..\ui\terraView\removeTable.cpp;..\..\..\moc\terraView\moc_removeTable.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui -o ..\..\..\ui\terraView\saveAndLoadColorBarWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui -i saveAndLoadColorBarWindow.h -o ..\..\..\ui\terraView\saveAndLoadColorBarWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveAndLoadColorBarWindow.h -o ..\..\..\moc\terraView\moc_saveAndLoadColorBarWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveAndLoadColorBarWindow.h;..\..\..\ui\terraView\saveAndLoadColorBarWindow.cpp;..\..\..\moc\terraView\moc_saveAndLoadColorBarWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui -o ..\..\..\ui\terraView\saveAndLoadColorBarWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAndLoadColorBarWindow.ui -i saveAndLoadColorBarWindow.h -o ..\..\..\ui\terraView\saveAndLoadColorBarWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveAndLoadColorBarWindow.h -o ..\..\..\moc\terraView\moc_saveAndLoadColorBarWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveAndLoadColorBarWindow.h;..\..\..\ui\terraView\saveAndLoadColorBarWindow.cpp;..\..\..\moc\terraView\moc_saveAndLoadColorBarWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveAsTable.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveAsTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAsTable.ui -o ..\..\..\ui\terraView\saveAsTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAsTable.ui -i saveAsTable.h -o ..\..\..\ui\terraView\saveAsTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveAsTable.h -o ..\..\..\moc\terraView\moc_saveAsTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveAsTable.h;..\..\..\ui\terraView\saveAsTable.cpp;..\..\..\moc\terraView\moc_saveAsTable.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveAsTable.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAsTable.ui -o ..\..\..\ui\terraView\saveAsTable.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveAsTable.ui -i saveAsTable.h -o ..\..\..\ui\terraView\saveAsTable.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveAsTable.h -o ..\..\..\moc\terraView\moc_saveAsTable.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveAsTable.h;..\..\..\ui\terraView\saveAsTable.cpp;..\..\..\moc\terraView\moc_saveAsTable.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveRaster.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveRaster.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveRaster.ui -o ..\..\..\ui\terraView\saveRaster.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveRaster.ui -i saveRaster.h -o ..\..\..\ui\terraView\saveRaster.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveRaster.h -o ..\..\..\moc\terraView\moc_saveRaster.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveRaster.h;..\..\..\ui\terraView\saveRaster.cpp;..\..\..\moc\terraView\moc_saveRaster.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveRaster.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveRaster.ui -o ..\..\..\ui\terraView\saveRaster.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveRaster.ui -i saveRaster.h -o ..\..\..\ui\terraView\saveRaster.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveRaster.h -o ..\..\..\moc\terraView\moc_saveRaster.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveRaster.h;..\..\..\ui\terraView\saveRaster.cpp;..\..\..\moc\terraView\moc_saveRaster.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveTableAsTxt.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveTableAsTxt.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveTableAsTxt.ui -o ..\..\..\ui\terraView\saveTableAsTxt.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveTableAsTxt.ui -i saveTableAsTxt.h -o ..\..\..\ui\terraView\saveTableAsTxt.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveTableAsTxt.h -o ..\..\..\moc\terraView\moc_saveTableAsTxt.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveTableAsTxt.h;..\..\..\ui\terraView\saveTableAsTxt.cpp;..\..\..\moc\terraView\moc_saveTableAsTxt.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveTableAsTxt.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveTableAsTxt.ui -o ..\..\..\ui\terraView\saveTableAsTxt.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveTableAsTxt.ui -i saveTableAsTxt.h -o ..\..\..\ui\terraView\saveTableAsTxt.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveTableAsTxt.h -o ..\..\..\moc\terraView\moc_saveTableAsTxt.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveTableAsTxt.h;..\..\..\ui\terraView\saveTableAsTxt.cpp;..\..\..\moc\terraView\moc_saveTableAsTxt.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\saveThemeToFileWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveThemeToFileWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveThemeToFileWindow.ui -o ..\..\..\ui\terraView\saveThemeToFileWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveThemeToFileWindow.ui -i saveThemeToFileWindow.h -o ..\..\..\ui\terraView\saveThemeToFileWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveThemeToFileWindow.h -o ..\..\..\moc\terraView\moc_saveThemeToFileWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveThemeToFileWindow.h;..\..\..\ui\terraView\saveThemeToFileWindow.cpp;..\..\..\moc\terraView\moc_saveThemeToFileWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\saveThemeToFileWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveThemeToFileWindow.ui -o ..\..\..\ui\terraView\saveThemeToFileWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\saveThemeToFileWindow.ui -i saveThemeToFileWindow.h -o ..\..\..\ui\terraView\saveThemeToFileWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\saveThemeToFileWindow.h -o ..\..\..\moc\terraView\moc_saveThemeToFileWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\saveThemeToFileWindow.h;..\..\..\ui\terraView\saveThemeToFileWindow.cpp;..\..\..\moc\terraView\moc_saveThemeToFileWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\selectProxMatrix.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\selectProxMatrix.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectProxMatrix.ui -o ..\..\..\ui\terraView\selectProxMatrix.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectProxMatrix.ui -i selectProxMatrix.h -o ..\..\..\ui\terraView\selectProxMatrix.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\selectProxMatrix.h -o ..\..\..\moc\terraView\moc_selectProxMatrix.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\selectProxMatrix.h;..\..\..\ui\terraView\selectProxMatrix.cpp;..\..\..\moc\terraView\moc_selectProxMatrix.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\selectProxMatrix.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectProxMatrix.ui -o ..\..\..\ui\terraView\selectProxMatrix.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectProxMatrix.ui -i selectProxMatrix.h -o ..\..\..\ui\terraView\selectProxMatrix.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\selectProxMatrix.h -o ..\..\..\moc\terraView\moc_selectProxMatrix.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\selectProxMatrix.h;..\..\..\ui\terraView\selectProxMatrix.cpp;..\..\..\moc\terraView\moc_selectProxMatrix.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\selectTextRepresentation.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\selectTextRepresentation.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectTextRepresentation.ui -o ..\..\..\ui\terraView\selectTextRepresentation.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectTextRepresentation.ui -i selectTextRepresentation.h -o ..\..\..\ui\terraView\selectTextRepresentation.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\selectTextRepresentation.h -o ..\..\..\moc\terraView\moc_selectTextRepresentation.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\selectTextRepresentation.h;..\..\..\ui\terraView\selectTextRepresentation.cpp;..\..\..\moc\terraView\moc_selectTextRepresentation.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\selectTextRepresentation.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectTextRepresentation.ui -o ..\..\..\ui\terraView\selectTextRepresentation.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selectTextRepresentation.ui -i selectTextRepresentation.h -o ..\..\..\ui\terraView\selectTextRepresentation.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\selectTextRepresentation.h -o ..\..\..\moc\terraView\moc_selectTextRepresentation.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\selectTextRepresentation.h;..\..\..\ui\terraView\selectTextRepresentation.cpp;..\..\..\moc\terraView\moc_selectTextRepresentation.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\selThemeTables.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\selThemeTables.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selThemeTables.ui -o ..\..\..\ui\terraView\selThemeTables.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selThemeTables.ui -i selThemeTables.h -o ..\..\..\ui\terraView\selThemeTables.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\selThemeTables.h -o ..\..\..\moc\terraView\moc_selThemeTables.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\selThemeTables.h;..\..\..\ui\terraView\selThemeTables.cpp;..\..\..\moc\terraView\moc_selThemeTables.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\selThemeTables.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selThemeTables.ui -o ..\..\..\ui\terraView\selThemeTables.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\selThemeTables.ui -i selThemeTables.h -o ..\..\..\ui\terraView\selThemeTables.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\selThemeTables.h -o ..\..\..\moc\terraView\moc_selThemeTables.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\selThemeTables.h;..\..\..\ui\terraView\selThemeTables.cpp;..\..\..\moc\terraView\moc_selThemeTables.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\semivar.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\semivar.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\semivar.ui -o ..\..\..\ui\terraView\semivar.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\semivar.ui -i semivar.h -o ..\..\..\ui\terraView\semivar.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\semivar.h -o ..\..\..\moc\terraView\moc_semivar.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\semivar.h;..\..\..\ui\terraView\semivar.cpp;..\..\..\moc\terraView\moc_semivar.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\semivar.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\semivar.ui -o ..\..\..\ui\terraView\semivar.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\semivar.ui -i semivar.h -o ..\..\..\ui\terraView\semivar.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\semivar.h -o ..\..\..\moc\terraView\moc_semivar.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\semivar.h;..\..\..\ui\terraView\semivar.cpp;..\..\..\moc\terraView\moc_semivar.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\skaterWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\skaterWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\skaterWindow.ui -o ..\..\..\ui\terraView\skaterWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\skaterWindow.ui -i skaterWindow.h -o ..\..\..\ui\terraView\skaterWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\skaterWindow.h -o ..\..\..\moc\terraView\moc_skaterWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\skaterWindow.h;..\..\..\ui\terraView\skaterWindow.cpp;..\..\..\moc\terraView\moc_skaterWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\skaterWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\skaterWindow.ui -o ..\..\..\ui\terraView\skaterWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\skaterWindow.ui -i skaterWindow.h -o ..\..\..\ui\terraView\skaterWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\skaterWindow.h -o ..\..\..\moc\terraView\moc_skaterWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\skaterWindow.h;..\..\..\ui\terraView\skaterWindow.cpp;..\..\..\moc\terraView\moc_skaterWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\spatializationWindow.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\spatializationWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatializationWindow.ui -o ..\..\..\ui\terraView\spatializationWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatializationWindow.ui -i spatializationWindow.h -o ..\..\..\ui\terraView\spatializationWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\spatializationWindow.h -o ..\..\..\moc\terraView\moc_spatializationWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\spatializationWindow.h;..\..\..\ui\terraView\spatializationWindow.cpp;..\..\..\moc\terraView\moc_spatializationWindow.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\spatializationWindow.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatializationWindow.ui -o ..\..\..\ui\terraView\spatializationWindow.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatializationWindow.ui -i spatializationWindow.h -o ..\..\..\ui\terraView\spatializationWindow.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\spatializationWindow.h -o ..\..\..\moc\terraView\moc_spatializationWindow.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\spatializationWindow.h;..\..\..\ui\terraView\spatializationWindow.cpp;..\..\..\moc\terraView\moc_spatializationWindow.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\spatialQuery.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\spatialQuery.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatialQuery.ui -o ..\..\..\ui\terraView\spatialQuery.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatialQuery.ui -i spatialQuery.h -o ..\..\..\ui\terraView\spatialQuery.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\spatialQuery.h -o ..\..\..\moc\terraView\moc_spatialQuery.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\spatialQuery.h;..\..\..\ui\terraView\spatialQuery.cpp;..\..\..\moc\terraView\moc_spatialQuery.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\spatialQuery.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatialQuery.ui -o ..\..\..\ui\terraView\spatialQuery.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\spatialQuery.ui -i spatialQuery.h -o ..\..\..\ui\terraView\spatialQuery.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\spatialQuery.h -o ..\..\..\moc\terraView\moc_spatialQuery.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\spatialQuery.h;..\..\..\ui\terraView\spatialQuery.cpp;..\..\..\moc\terraView\moc_spatialQuery.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\statistic.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\statistic.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\statistic.ui -o ..\..\..\ui\terraView\statistic.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\statistic.ui -i statistic.h -o ..\..\..\ui\terraView\statistic.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\statistic.h -o ..\..\..\moc\terraView\moc_statistic.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\statistic.h;..\..\..\ui\terraView\statistic.cpp;..\..\..\moc\terraView\moc_statistic.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\statistic.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\statistic.ui -o ..\..\..\ui\terraView\statistic.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\statistic.ui -i statistic.h -o ..\..\..\ui\terraView\statistic.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\statistic.h -o ..\..\..\moc\terraView\moc_statistic.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\statistic.h;..\..\..\ui\terraView\statistic.cpp;..\..\..\moc\terraView\moc_statistic.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\tableProp.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\tableProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\tableProp.ui -o ..\..\..\ui\terraView\tableProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\tableProp.ui -i tableProp.h -o ..\..\..\ui\terraView\tableProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\tableProp.h -o ..\..\..\moc\terraView\moc_tableProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\tableProp.h;..\..\..\ui\terraView\tableProp.cpp;..\..\..\moc\terraView\moc_tableProp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\tableProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\tableProp.ui -o ..\..\..\ui\terraView\tableProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\tableProp.ui -i tableProp.h -o ..\..\..\ui\terraView\tableProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\tableProp.h -o ..\..\..\moc\terraView\moc_tableProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\tableProp.h;..\..\..\ui\terraView\tableProp.cpp;..\..\..\moc\terraView\moc_tableProp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\telayer_metadata.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\telayer_metadata.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\telayer_metadata.ui -o ..\..\..\ui\terraView\telayer_metadata.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\telayer_metadata.ui -i telayer_metadata.h -o ..\..\..\ui\terraView\telayer_metadata.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\telayer_metadata.h -o ..\..\..\moc\terraView\moc_telayer_metadata.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\telayer_metadata.h;..\..\..\ui\terraView\telayer_metadata.cpp;..\..\..\moc\terraView\moc_telayer_metadata.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\telayer_metadata.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\telayer_metadata.ui -o ..\..\..\ui\terraView\telayer_metadata.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\telayer_metadata.ui -i telayer_metadata.h -o ..\..\..\ui\terraView\telayer_metadata.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\telayer_metadata.h -o ..\..\..\moc\terraView\moc_telayer_metadata.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\telayer_metadata.h;..\..\..\ui\terraView\telayer_metadata.cpp;..\..\..\moc\terraView\moc_telayer_metadata.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\terraViewBase.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\terraViewBase.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\terraViewBase.ui -o ..\..\..\ui\terraView\terraViewBase.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\terraViewBase.ui -i terraViewBase.h -o ..\..\..\ui\terraView\terraViewBase.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\terraViewBase.h -o ..\..\..\moc\terraView\moc_terraViewBase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\terraViewBase.h;..\..\..\ui\terraView\terraViewBase.cpp;..\..\..\moc\terraView\moc_terraViewBase.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\terraViewBase.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\terraViewBase.ui -o ..\..\..\ui\terraView\terraViewBase.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\terraViewBase.ui -i terraViewBase.h -o ..\..\..\ui\terraView\terraViewBase.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\terraViewBase.h -o ..\..\..\moc\terraView\moc_terraViewBase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\terraViewBase.h;..\..\..\ui\terraView\terraViewBase.cpp;..\..\..\moc\terraView\moc_terraViewBase.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\textRep.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\textRep.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\textRep.ui -o ..\..\..\ui\terraView\textRep.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\textRep.ui -i textRep.h -o ..\..\..\ui\terraView\textRep.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\textRep.h -o ..\..\..\moc\terraView\moc_textRep.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\textRep.h;..\..\..\ui\terraView\textRep.cpp;..\..\..\moc\terraView\moc_textRep.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\textRep.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\textRep.ui -o ..\..\..\ui\terraView\textRep.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\textRep.ui -i textRep.h -o ..\..\..\ui\terraView\textRep.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\textRep.h -o ..\..\..\moc\terraView\moc_textRep.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\textRep.h;..\..\..\ui\terraView\textRep.cpp;..\..\..\moc\terraView\moc_textRep.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\themeProp.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\themeProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeProp.ui -o ..\..\..\ui\terraView\themeProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeProp.ui -i themeProp.h -o ..\..\..\ui\terraView\themeProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\themeProp.h -o ..\..\..\moc\terraView\moc_themeProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\themeProp.h;..\..\..\ui\terraView\themeProp.cpp;..\..\..\moc\terraView\moc_themeProp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\themeProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeProp.ui -o ..\..\..\ui\terraView\themeProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeProp.ui -i themeProp.h -o ..\..\..\ui\terraView\themeProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\themeProp.h -o ..\..\..\moc\terraView\moc_themeProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\themeProp.h;..\..\..\ui\terraView\themeProp.cpp;..\..\..\moc\terraView\moc_themeProp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\themeVis.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\themeVis.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeVis.ui -o ..\..\..\ui\terraView\themeVis.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeVis.ui -i themeVis.h -o ..\..\..\ui\terraView\themeVis.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\themeVis.h -o ..\..\..\moc\terraView\moc_themeVis.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\themeVis.h;..\..\..\ui\terraView\themeVis.cpp;..\..\..\moc\terraView\moc_themeVis.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\themeVis.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeVis.ui -o ..\..\..\ui\terraView\themeVis.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\themeVis.ui -i themeVis.h -o ..\..\..\ui\terraView\themeVis.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\themeVis.h -o ..\..\..\moc\terraView\moc_themeVis.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\themeVis.h;..\..\..\ui\terraView\themeVis.cpp;..\..\..\moc\terraView\moc_themeVis.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\viewProp.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\viewProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\viewProp.ui -o ..\..\..\ui\terraView\viewProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\viewProp.ui -i viewProp.h -o ..\..\..\ui\terraView\viewProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\viewProp.h -o ..\..\..\moc\terraView\moc_viewProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\viewProp.h;..\..\..\ui\terraView\viewProp.cpp;..\..\..\moc\terraView\moc_viewProp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\viewProp.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\viewProp.ui -o ..\..\..\ui\terraView\viewProp.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\viewProp.ui -i viewProp.h -o ..\..\..\ui\terraView\viewProp.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\viewProp.h -o ..\..\..\moc\terraView\moc_viewProp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\viewProp.h;..\..\..\ui\terraView\viewProp.cpp;..\..\..\moc\terraView\moc_viewProp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\terraView\ui\visual.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\visual.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\visual.ui -o ..\..\..\ui\terraView\visual.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\visual.ui -i visual.h -o ..\..\..\ui\terraView\visual.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\visual.h -o ..\..\..\moc\terraView\moc_visual.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\visual.h;..\..\..\ui\terraView\visual.cpp;..\..\..\moc\terraView\moc_visual.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Uic&apos;ing ..\..\..\terraView\ui\visual.ui..."
+						CommandLine="$(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\visual.ui -o ..\..\..\ui\terraView\visual.h &amp;&amp; $(QTDIR)\bin\uic.exe ..\..\..\terraView\ui\visual.ui -i visual.h -o ..\..\..\ui\terraView\visual.cpp &amp;&amp; $(QTDIR)\bin\moc.exe ..\..\..\ui\terraView\visual.h -o ..\..\..\moc\terraView\moc_visual.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;$(QTDIR)\bin\uic.exe"
+						Outputs="..\..\..\ui\terraView\visual.h;..\..\..\ui\terraView\visual.cpp;..\..\..\moc\terraView\moc_visual.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="../terraView_pt.ts">
+			</File>
+			<File
+				RelativePath="../terraView_sp.ts">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resources"
+			Filter="cpp;ico;png;jpg;jpeg;gif;xpm;bmp;rc;ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="../ui/images/addressDictionary.png">
+			</File>
+			<File
+				RelativePath="../ui/images/addressLayer.png">
+			</File>
+			<File
+				RelativePath="../ui/images/addressReferenceLayer.png">
+			</File>
+			<File
+				RelativePath="../ui/images/addressTable.png">
+			</File>
+			<File
+				RelativePath="../ui/images/and.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/area.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/buffer.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/bufferNoUnion.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/bufferUnion.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/clearColor.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/closeDB.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/containLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/containLinPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/containLinPon.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/containPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/convexHull.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/coverByPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/coverLinPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/coverPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/crossLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/crossLinPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/database.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/databasesTree.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/disjointLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/disjointLinPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/disjointLinPon.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/disjointPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/disjointPonPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/display.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/distance.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/distMeter.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/draw.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/edit.xpm">
+			</File>
+			<File
+				RelativePath="../ui/images/equalLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/equalPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/graphic.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/graphicConfig.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/graphicCursor.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/grid.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/help.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/import.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/infoCursor.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/infolayer.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/insideAndOutside.png">
+			</File>
+			<File
+				RelativePath="../ui/images/invertColor1.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/invertSelection.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/isContainLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/isContainLinPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/isContainPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/isContainPonPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/left.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/length.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/minus.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/nearstNeigh.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/nextDisplay.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/nonEdit.xpm">
+			</File>
+			<File
+				RelativePath="../ui/images/onlyInside.png">
+			</File>
+			<File
+				RelativePath="../ui/images/onlyOutside.png">
+			</File>
+			<File
+				RelativePath="../ui/images/openfile.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/or.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/overlapLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/overlapPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/panCursor.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/pointer.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/previousDisplay.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/print.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/promote.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/reset.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/right.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/table.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/terralib.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/theme.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/tileWindows.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/touchLin.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/touchLinPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/touchLinPon.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/touchPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/touchPonPol.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/unselect.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/view.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/viewsTree.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/xor.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/zoomCursor.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/zoomIn.bmp">
+			</File>
+			<File
+				RelativePath="../ui/images/zoomOut.bmp">
+			</File>
+			<File
+				RelativePath="qmake_image_collection.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

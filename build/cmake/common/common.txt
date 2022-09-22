@@ -1,0 +1,1 @@
+file(GLOB DRIVER_INCLUDES $(TERRALIB_DIR)/src/terralib/drivers/*)

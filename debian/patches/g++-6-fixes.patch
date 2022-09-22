@@ -1,0 +1,21 @@
+Description: C++ -std11 fix needed for magics
+ Disambiguate isnan() for users of TeDefines.h
+Author: Alastair McKinstry <mckinstry@debian.org>
+Last-Update: 2016-05-02
+Forwarded: no
+Index: libterralib-4.3.0+dfsg.2/src/terralib/kernel/TeDefines.h
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/src/terralib/kernel/TeDefines.h
++++ libterralib-4.3.0+dfsg.2/src/terralib/kernel/TeDefines.h
+@@ -204,8 +204,9 @@ const std::string TeDBVERSION = "4.0.0";
+   #include <float.h>
+   #define TeISNAN( x ) _isnan( x )
+ #elif TePLATFORM == TePLATFORMCODE_LINUX || TePLATFORM == TePLATFORMCODE_AIX
+-  #include <math.h>
+-  #define TeISNAN( x ) isnan( x )
++  #include <cmath>
++using std::isnan;
++#define TeISNAN( x ) ::isnan( x )
+ #else
+   #error "ERROR: Unsupported platform"
+ #endif

@@ -1,0 +1,30 @@
+Author: Alastair McKinstry <mckinstry@debian.org>
+Description: Link against libs shipped in Debian rather than versions built in terralib
+Forwarded: not-needed
+Last-Updated: 2015-08-05
+
+Index: libterralib-4.3.0+dfsg.2/build/qt4/image_processing/image_processing.pro
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/build/qt4/image_processing/image_processing.pro
++++ libterralib-4.3.0+dfsg.2/build/qt4/image_processing/image_processing.pro
+@@ -13,7 +13,7 @@ win32 {
+ 	LIBS += -lzlibdll
+ }
+ unix:LIBS += -lz -lpthread
+-LIBS += -lterralibtiff
++LIBS += -lgeotiff
+ INCLUDEPATH = \
+   $${TERRALIB_SRC_DIR}/terralib/kernel \
+   $${TERRALIB_SRC_DIR}/terralib/functions \
+Index: libterralib-4.3.0+dfsg.2/build/qt4/te_dxf/te_dxf.pro
+===================================================================
+--- libterralib-4.3.0+dfsg.2.orig/build/qt4/te_dxf/te_dxf.pro
++++ libterralib-4.3.0+dfsg.2/build/qt4/te_dxf/te_dxf.pro
+@@ -28,6 +28,6 @@ SOURCES	+= $${SRCPATH}/tedxflayer.cpp \
+ 	$${SRCPATH}/TeDXFDriver.cpp \
+ 	$${SRCPATH}/TeDXFDriverFactory.cpp 
+ 	
+-LIBS += -ldxf -lterralib
++LIBS += -ldxflib -lterralib
+ 
+ include (../install_cfg.pri)

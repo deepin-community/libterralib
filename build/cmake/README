@@ -1,0 +1,74 @@
+Why cmake ?
+
+- Its mature and many projects are using it including kde, blender, QGis and many others.
+
+- It can generate project files for many IDEs (Visual Studio, Eclipse). So maybe
+  this can remove some duplication
+
+- It allows using -jx without rerunning make.
+
+I feel its easier to customize than qmake - Maybe that's because I don't know
+qmake too well. Having parallel builds which fail on failure only is important
+to me.
+
+TODO:
+  - test Windows
+  - add more library paths. In particular add paths to the libs which ship with this
+    repo - I think they should be shipped independently or both: i686 and
+    x86_64 versions should be shipped
+  - write code doing a usuful install ?
+  - make some dependencies such as Oracel optional
+  - think about reusing libraries shipping with linux systems - so don't build
+    them here or document why there is a local copy.
+
+usage: type into your shell
+
+  cd TOP_DIR_OF_REPO
+
+  # out of source build:
+  mkdir build-terraView; cd build-terraView
+
+  # configure, build then run:
+  cmake ../cmake/terraView \
+  && make -j $NUM_CORES \
+  && ./terraView
+
+
+similar to terraView you can create build directories for all libraries manually
+Why cmake ?
+
+- Its mature and many projects are using it including kde, blender, QGis and many others.
+
+- It can generate project files for many IDEs (Visual Studio, Eclipse). So maybe
+  this can remove some duplication
+
+- It allows using -jx without rerunning make.
+
+I feel its easier to customize than qmake - Maybe that's because I don't know
+qmake too well. Having parallel builds which fail on failure only is important
+to me.
+
+TODO:
+  - test Windows
+  - add more library paths. In particular add paths to the libs which ship with this
+    repo - I think they should be shipped independently or both: i686 and
+    x86_64 versions should be shipped
+  - write code doing a usuful install ?
+  - make some dependencies such as Oracel optional
+  - think about reusing libraries shipping with linux systems - so don't build
+    them here or document why there is a local copy.
+
+usage: type into your shell
+
+  cd TOP_DIR_OF_REPO
+
+  # out of source build:
+  mkdir build-terraView; cd build-terraView
+
+  # configure, build then run:
+  cmake ../cmake/terraView \
+  && make -j $NUM_CORES \
+  && ./terraView
+
+
+similar to terraView you can create build directories for all libraries manually

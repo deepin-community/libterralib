@@ -1,0 +1,7 @@
+geotiff.patch
+kfreebsd-build.patch
+# pkg-config.patch
+clang-fix.patch
+build-fix.patch
+archs.patch
+g++-6-fixes.patch

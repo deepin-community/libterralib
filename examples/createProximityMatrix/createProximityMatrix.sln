@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "createProximityMatrix", "createProximityMatrix.vcproj", "{F9836EAB-9138-4D83-87E8-37FCB0704AC7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terralib", "..\..\terralibw\terralib\terralib.vcproj", "{F6FE4C5D-54E9-4F24-92B1-66A78C65EA3F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff", "..\..\terralibw\tiff\tiff.vcproj", "{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjpeg", "..\..\terralibw\libjpeg\libjpeg.vcproj", "{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F9836EAB-9138-4D83-87E8-37FCB0704AC7}.Debug.ActiveCfg = Debug|Win32
+		{F9836EAB-9138-4D83-87E8-37FCB0704AC7}.Debug.Build.0 = Debug|Win32
+		{F9836EAB-9138-4D83-87E8-37FCB0704AC7}.Release.ActiveCfg = Release|Win32
+		{F9836EAB-9138-4D83-87E8-37FCB0704AC7}.Release.Build.0 = Release|Win32
+		{F6FE4C5D-54E9-4F24-92B1-66A78C65EA3F}.Debug.ActiveCfg = Debug|Win32
+		{F6FE4C5D-54E9-4F24-92B1-66A78C65EA3F}.Debug.Build.0 = Debug|Win32
+		{F6FE4C5D-54E9-4F24-92B1-66A78C65EA3F}.Release.ActiveCfg = Release|Win32
+		{F6FE4C5D-54E9-4F24-92B1-66A78C65EA3F}.Release.Build.0 = Release|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Debug.ActiveCfg = Debug|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Debug.Build.0 = Debug|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Release.ActiveCfg = Release|Win32
+		{5E26C3A1-28D3-40FA-A3F5-115180C98E0E}.Release.Build.0 = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.ActiveCfg = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Debug.Build.0 = Debug|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.ActiveCfg = Release|Win32
+		{BEDDDA8D-9821-4B3F-AD36-2B1AACE3572C}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

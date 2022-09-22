@@ -1,0 +1,11 @@
+Release/linux-g++/libterralib.so.*      usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libterralibpdi.so.*      usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libte_utils.so.*      usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libte_functions.so.*      usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libte_shapelib.so.*	usr/lib/@DEB_HOST_MULTIARCH@		
+Release/linux-g++/libshapelib.so.*	usr/lib/@DEB_HOST_MULTIARCH@		
+Release/linux-g++/libte_mysql.so.*		usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libte_dxf.so.*		usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libte_postgresql.so.*		usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libte_utils.so.*		usr/lib/@DEB_HOST_MULTIARCH@
+Release/linux-g++/libstat.so.*			usr/lib/@DEB_HOST_MULTIARCH@

@@ -1,0 +1,19 @@
+Origin: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=746608
+Description: Fix for clang FTBFS.
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Updated: 2014-09-14
+Forwarded: no
+
+Index: libterralib-4.3.0/src/terralib/kernel/Gra_algo.h
+===================================================================
+--- libterralib-4.3.0.orig/src/terralib/kernel/Gra_algo.h
++++ libterralib-4.3.0/src/terralib/kernel/Gra_algo.h
+@@ -187,7 +187,7 @@ bool topoSort(
+        std::cerr << "Error: graph contains a cycle!\n";
+     return VerticesWithoutSuccessor == 0;
+ 	*/
+-	return;
++	return 1;
+ }
+ 
+ } // namespace br_stl

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib/@DEB_HOST_MULTIARCH@
+includedir=${prefix}/include/terralib
+
+Name: libterralib
+Description: C++ library for Geographical Information Systems
+Version: 4.4.0
+Libs: -L${libdir} -lterralib
+Cflags: -I${includedir}
+Libs.private: -lz -ljpeg  -lpthread -lproj -lgeotiff -ltiff -ldxflib -lshp -lqwt
